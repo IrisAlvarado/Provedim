@@ -1,0 +1,23 @@
+.colorEstrellas{
+	font-size: 20px;
+    color: #FF9800;
+}
+
+.btn {
+    background-color: white !important;
+    border-color: #984B43 !important;
+    color: #984B43 !important;
+
+}
+
+.btnAtras{
+	background-color: #984B43 !important;
+    border-color: #984B43 !important;
+    color: white !important;
+}
+
+.btn:hover{
+    background-color: #984B43 !important;
+    border-color: #984B43 !important;
+    color: white !important;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reestablece tu contraseña</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reestablecer_contrasena.css">
+
+</head>
+
+<body>
+
+    <div id="form">
+        <div class="formulario">
+            <h2 style="text-align: center; margin-bottom: 1em;">¿Olvidaste tu contraseña?</h2>
+            <h6>Por favor ingresa tu correo, y te enviaremos un código para establecer una nueva contraseña</h6>
+            <div class="correo" id="div-correo">
+                <label for="correo">Ingresa el correo de tu cuenta:</label>
+                <input type="email" id="correo" class="form-control" placeholder="Correo">
+                <div class="alert alert-danger" role="alert" id="avisoCorreo" style="display: none; margin-top: .5em;">
+                    Ingrese un correo válido
+                </div>
+                <div class="alert alert-danger" role="alert" id="avisoCorreo-noexiste"
+                    style="display: none;margin-top: .5em;">
+                    El correo ingresado no está registrado.
+                </div>
+            </div>
+
+            <div class="codigo" id="div-codigo" style="display: none;">
+                <label for="codigo">Hemos enviado un código a tu correo, ingrésalo por favor: </label>
+                <input type="text" id="codigo" class="form-control" placeholder="Código">
+                <div class="alert alert-danger" role="alert" id="avisocodigo" style="display: none; margin-top: .5em;">
+                    Ingrese un código válido
+                </div>
+            </div>
+
+            <div class="contrasena" id="div-contrasena" style="display: none;">
+                <label for="contrasena">Ingresa la nueva contrasena </label>
+                <input type="password" id="contrasena" class="form-control" placeholder="Contrasena">
+                <div class="alert alert-danger" role="alert" id="avisoContrasena"
+                    style="display: none;margin-top: .5em;">
+                    La contraseña debe tener mas de 8 caracteres.
+                </div>
+            </div>
+
+            <br>
+            <br>
+        </div>
+        <div id="div-botones" style="text-align: center;">
+            <button class="btn btn-outline-success" id="enviar-correo">Enviar correo</button>
+            <button class="btn btn-outline-success" style="display: none;" id="verificar-codigo">Verificar
+                código</button>
+            <button class="btn btn-outline-success" style="display: none;" id="cambiar-contrasena">Cambiar
+                contraseña</button>
+
+
+            <div class="alert alert-success" role="alert" style="display: none; margin-top: .5em;" id="aviso-correcto">
+                Se reestableció la contraseña correctamente.
+            </div>
+        </div>
+        <div id="div-cancelar" style="text-align: center;">
+            <button class="btn btn-outline-danger" id="cancelar" style="margin-top: 1em;">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/reestablecer_contrasena.js"></script>
+
+</html>

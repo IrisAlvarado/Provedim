@@ -1,0 +1,24 @@
+.colorNavbar{
+	background-color:#131a40!important; 
+}
+
+.colorNavI{	
+	background-color:#131a40!important;
+}
+/**
+ * #222D32 gris oscuro
+ #131a40 azul oscuro
+ #629AA9
+ */
+
+.btnNavI {
+    color: #fff;
+    background-color: #131a40;
+    border-color: #673AB7;
+}
+
+.btnNavI:hover {
+    color: #fff;
+    background-color: #040b35;
+    border-color: #673AB7;
+}

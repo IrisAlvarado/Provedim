@@ -1,0 +1,48 @@
+.formulario {
+    /* background-color: white;
+    margin-top: 10em;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 27em !important;
+    padding: 2em; */
+    height: 27em !important;
+
+}
+
+#div-correo {
+    margin-top: 1em;
+}
+
+#div-codigo {
+    margin-top: 1em;
+}
+
+#div-contrasena {
+    margin-top: 1em;
+}
+
+#div-botones {
+    /* width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em; */
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+#form {
+
+    -webkit-box-shadow: 12px 12px 20px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 12px 20px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 12px 20px -7px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    margin-top: 6em;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+
+}

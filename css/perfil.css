@@ -1,0 +1,34 @@
+.btn-danger {
+    background-color: white !important;
+    border-color: #984B43 !important;
+    color: #984B43 !important;
+    /* background: linear-gradient(0.25turn, #091f36, #EAC67A); */
+}
+
+.btn-danger:hover {
+    background-color: #984B43 !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.btn-danger:focus {
+    border-color: #984B43 !important;
+    /* box-shadow: inset 0 1px 1px #da543d, 0 0 8px #c1432e !important; */
+    box-shadow: inset 0 1px 1px #984B43, 0 0 8px #984B43 !important;
+}
+
+hr {
+    color: #984B43 !important;
+    background-color: #984B43 !important;
+
+}
+
+.form-control:focus {
+    border-color: #091f36 !important;
+    /* box-shadow: inset 0 1px 1px #da543d, 0 0 8px #c1432e !important; */
+    box-shadow: inset 0 1px 1px white, 0 0 8px #091f36 !important;
+}
+
+body {
+    color: #091f36;
+}
