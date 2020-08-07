@@ -283,10 +283,11 @@ a.item_add {
 /*--banner strat here--*/
 .banner {
     min-height: 620px;
-    background:rgba(209, 72, 37, 0.26);
+    background:#FFFFFF;
 }
 .banner-main {
     padding:4em 0em 3em 0em;
+    background:#FFFFFF;
 }
 .banner-right {
     padding-top: 5em;
@@ -337,6 +338,9 @@ span.bann-heart {
     font-size: 1em;
     color:#EA572D;
     margin-top: 1.3em;
+}
+p.centrado {
+  text-align: center;
 }
 select.bann-size {
     background: url(../images/arrow.png)no-repeat 88% 50%;
@@ -437,7 +441,7 @@ ul.bann-btns li a:hover {
 .box-grid {
     background: #fff;
     box-shadow: 0px 0px 1px 1px rgba(204, 204, 204, 0.76);
-    padding: 1.5em;
+    padding:    250x300;
 }
 .box-grid h3 {
     font-size: 1.5em;
