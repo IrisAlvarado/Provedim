@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Shoplist Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Shoplist Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--Google Fonts-->
@@ -26,7 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
+				$(".scroll").click(function(event){
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
@@ -38,12 +38,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header strat here-->
+<div class="blc-layer2">
 <div class="header">
 	<div class="container">
 		<div class="header-main">
 			<div class="top-nav">
 				<div class="content white">
-	              <nav class="navbar navbar-default" role="navigation">
+	              <nav class="navbar navbar-default " role="navigation">
 					    <div class="navbar-header">
 					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						        <span class="sr-only">Toggle navigation</span>
@@ -52,18 +53,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						        <span class="icon-bar"></span>
 					        </button>
 					        <div class="navbar-brand logo">
-								<a href="index.html"><img src="images/logo1.png" alt=""></a>
+								<a href="index.html"><img src="logo/logo2.jpeg" alt="" id="logo"></a>
 							</div>
 					    </div>
 					    <!--/.navbar-header-->
 					 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					        <ul class="nav navbar-nav">
-					        	   <li><a href="index.html">Home</a></li>
-					        	   <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
-					        	   <li><a href="#catalogo">Catálogo</a></li>
-					        	   <li><a href=#>Cotizaciones</a></li>
-						             
-						        <li><a href="contact.html">Contáctenos</a></li>
+
+					        	   <li><a href="index.html"><b>Home</b></a></li>
+					        	   <li><a href="#quienes-somos"><b>¿Quiénes Somos?</b></a></li>
+					        	   <li><a href="#catalogo"><b>Catálogo</b></a></li>
+					        	   <li><a href=#><b>Cotizaciones</b></a></li>
+						        	<li><a href="contact.html"><b>Contáctenos</b></a></li>
+
 					        </ul>
 					    </div>
 					    <!--/.navbar-collapse-->
@@ -74,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-right">
 				<div class="search">
 					<div class="search-text">
-					    <input class="serch" type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+					    <input class="serch" type="text" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}"/>
 					</div>
 					<div class="cart box_1">
 						<a href="checkout.html">
@@ -85,32 +87,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-					</div>    
+					</div>
 					<div class="head-signin">
 						<h5><a href="login.html"><i class="hd-dign"></i>Iniciar Sesión</a></h5>
-					</div>              
-                     <div class="clearfix"> </div>					
+					</div>
+                     <div class="clearfix"> </div>
 				</div>
 			</div>
 		 <div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
-<!--block-layer2 start here-->
-<div class="blc-layer2">
+<!--block-layer2 start here--
+<div class="blc-layer2"-->
 	<div class="container">
 		<div class="blc-layer2-main">
-			 
+
 			 <div class="col-md-6 blc-layer2-center">
-			 	
+
 			 </div>
 			 <div class="col-md-6 banner-right simpleCart_shelfItem">
-				<span class="bann-heart"> </span>
+				<!--span class="bann-heart"> </span-->
 				<h1>PROVEDIM</h1>
 				<h2>Bienvenido a Nuestra Plataforma</h2>
 				<h6></h6>
 				<ul class="bann-btns">
-				<li><a href="product.html" class="item_add">Ver catálogo</a></li>
+				<li><a href="product.html" class="item_add" id="catalog"><b>Ir a catálogo</b></a></li>
                </ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -128,12 +130,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href=#><img src="images/copia2.jpg" alt="" class="img-responsive"></a>
 			</div>
 			<div class="col-md-6 banner-right simpleCart_shelfItem">
-				<span class="bann-heart"> </span>
-				<h1>¿Quiénes Somos?</h1>
+				<!--span class="bann-heart"> </span-->
+				<h1 id="titulo" >¿Quiénes Somos?</h1>
 				<h2>Una plataforma que muestra su producto de preferencia de acuerdo a su precio y calidad.</h2>
-				<h6>Nuestro servicios están enfocados a Proveedores que quieren anunciar sus productos y a Clientes que necesitan dichos productos.</h6>
+				<h6 id="h6">Nuestro servicios están enfocados a: </h6>
+				<div class="col-md-1">
+					<img src="ico/check.jpg" style="width: 25px; margin-top: 10px;">
+				</div>
+				<div class="col-md-2">
+					<h4 style="margin-top: 10px;"><strong>Proveedores</strong> </h4>
+				</div>
+				<div class="col-md-9 " id="h5c">
+					<h5> Si deseas anunciar tus productos, te invitamos a que crees una cuenta y puedas escoger cualquiera de nuestros planes de servicios de tu preferencia. De esta forma podras disfrutar de los beneficios que PROVEDIM te ofrece.</h5>
+				</div>
+				<div class="col-md-1">
+					<img src="ico/check.jpg" style="width: 25px; margin-top: 10px;">
+				</div>
+				<div class="col-md-2">
+					<h4 style="margin-top: 10px;"><strong> Clientes </strong></h4>
+				</div>
+				<div class="col-md-9" id="h6c">
+					<h5>Si estas buscando productos a precios accesibles, te invitamos a que entres a nuestra sección "catálogo". Así podrás echar un vistaso a la variedad de productos que te muestra PROVEDIM sobre proveedores 100% fiables.</h5>
+				</div>
 				<ul class="bann-btns">
-				<li><a href="contact.html" class="item_add">Contáctanos</a></li>
+				<li><a href="contact.html" class="item_add contact2">Contáctanos</a></li>
                </ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -159,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 							<h3><a href="single.html">Ver detalles</a></h3>
-							<p></p>						
+							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.200</span>
@@ -173,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 							<h3><a href="single.html">Ver detalles</a></h3>
-							<p></p>						
+							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.250</span>
@@ -187,7 +207,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 							<h3><a href="single.html">Ver detalles</a></h3>
-							<p></p>						
+							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.150</span>
@@ -201,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 							<h3><a href="single.html">Ver detalles</a></h3>
-							<p></p>						
+							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.200</span>
@@ -215,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 
 	</div>
-</div>	
+</div>
 </section>
 <!--home block end here-->
 <!--block-layer1 start here-->
@@ -225,22 +245,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h2>Planes para Proveedores</h2>
 				   	<br></br>
 			<div class="col-md-3 home-grid">
-				
+
 				      <a href="product.html"><img src="images/w2.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 				      <br> </br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 a 5 Anuncios</p>
-				   
+
 			</div>
 			<div class="col-md-3 home-grid">
 			    <a href="product.html"><img src="images/w3.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 			    <br></br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 a 10 Anuncios</p>
 				   </div>
-					
+
 			</div>
 			<p class="centrado">
 			<div class="col-md-3 home-grid">
-				
+
 				      <a href="product.html"><img src="images/w4.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 				      <br></br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anuncios Ilimitados</p>
@@ -248,11 +268,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="reg.php" class="header-right">Crear cuenta</a>
 				</div>
 			</div>
- 
+
 		</div>
 
 	</div>
-</div>	
+</div>
 	</div>
 </div>
 <!--block-layer1 end here-->
@@ -294,7 +314,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 					<form>
 					<input class="email-ftr" type="text" value="Newsletter" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Newsletter';}">
-					<input type="submit" value="Submit"> 
+					<input type="submit" value="Submit">
 					</form>
 				</div>
 		    <div class="clearfix"> </div>
