@@ -22,7 +22,7 @@
 		      </li-->
 
 		      <li class="nav-item " id="#">
-		        <a class="nav-link  font-weight-bold" href="../index.html" tabindex="-1" aria-disabled="true"><b>Home</b></a>
+		        <a class="nav-link  font-weight-bold" href="../index.php" tabindex="-1" aria-disabled="true"><b>Home</b></a>
 		      </li>
 
 		      <li class="nav-item " id="#">
