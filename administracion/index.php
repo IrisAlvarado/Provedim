@@ -86,7 +86,7 @@
    			 <div class="alert alert-dark">
    			 	<h3 class="text-center text-success font-weight-bold" id="titleview">Vista rapida</h3>
    			 </div>
-   			 <div class="row">
+   			 <!--div class="row">
    			 	<div class="col-sm-3">
    			 		<div class="card" style="width: 18rem;">
    			 			<img src="../imgUsers/usuarios.jpeg" class="card-img-top" style="
@@ -120,7 +120,7 @@
    			 			</div>
    			 		</div>
    			 	</div>
-   			 </div>
+   			 </div-->
    		</div>
    	</div>
    </div>
