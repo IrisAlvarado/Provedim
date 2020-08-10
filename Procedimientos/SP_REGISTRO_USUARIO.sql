@@ -1,14 +1,11 @@
-CREATE OR REPLACE PROCEDURE SP_REGISTRO_USUARIO(
+CREATE  PROCEDURE SP_REGISTRO_USUARIO(
                     IN ppNombre VARCHAR(50),
-                    IN psNombre VARCHAR(50),
                     IN ppApellido VARCHAR(50),
                     IN psApellido VARCHAR(50),
                     IN pcorreo VARCHAR(50),
                     IN pcontrasenia VARCHAR(50),
-                    IN pfechaNac VARCHAR(10),
+                    IN pdireccion VARCHAR(10),
                     IN ptipoUsuario INT,
-                    IN pmunicipio INT,
-                    IN INtelefono INT,
                     IN codigoIN VARCHAR(250),
                     OUT mensaje VARCHAR(100),
                     OUT codigo VARCHAR(2),
@@ -37,13 +34,7 @@ SP:BEGIN
         SET tempMensaje='Contrasenia ,';
     END IF;
     IF INtelefono='' THEN
-        SET tempMensaje='telefono ,';
-    END IF;
-    IF pfechaNac='' THEN
-        SET tempMensaje='Fecha nacimiento ,';
-    END IF;
-    IF pmunicipio<1 THEN
-        SET tempMensaje='Municipio ,';
+        SET tempMensaje='direccion,';
     END IF;
     IF codigoIN='' THEN
         SET tempMensaje='Codigo ,';
@@ -61,15 +52,8 @@ SP:BEGIN
         SELECT MAX(idPersona) into id FROM `persona`;
     
         SET pid=id+1; 
-        insert into `persona` (`idPersona`, `primerNombre`, `segundoNombre`, `primerApellido`, `segundoApellido`, `correo`, `fechaNac`, `contrasenia`, `idTipoUsuario`, `idMunicipio`, `estado`, `codigo`) 
-        values(pid, ppNombre, psNombre, ppApellido, psApellido, pcorreo, pfechaNac, pcontrasenia, ptipoUsuario, pMunicipio, "I", codigoIN);
-
-        SELECT MAX(idTelefono) into id FROM `telefono`;
-        
-
-        INSERT INTO `telefono`
-        (idTelefono, telefono, idPersona)
-        VALUES(id+1, INtelefono, pid);
+        insert into `persona` (`idPersona`, `primerNombre`, `segundoNombre`, `primerApellido`, `segundoApellido`, `correo`, `direccion`, `contrasenia`, `idTipoUsuario`,`idMunicipio`, `estado`, `codigo`) 
+        values(pid, ppNombre, "Null", ppApellido, psApellido, pcorreo, pdireccion, pcontrasenia, ptipoUsuario, "NULL", "I", codigoIN);
 
 
         SET mensaje='Registro exitoso';

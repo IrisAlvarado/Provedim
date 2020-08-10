@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Provedim</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.0.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <!-- Custom Theme files -->
@@ -66,9 +66,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					        	   <li><a href="#cotizaciones"><b>Cotizaciones</b></a></li>
 						        	<li><a href="#proveedores"><b>Proveedores</b></a></li>
-
-					        	   <li><a href=#><b>Cotizaciones</b></a></li>
-						        	<li><a href="contact.html"><b>Contáctenos</b></a></li>
 
 
 					        </ul>
@@ -187,7 +184,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
 
-							<h3><a href="single.html">Ver detalles</a></h3>
 
 							<p></p>
 					</div>
@@ -204,10 +200,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="home-product-bottom">
 
 							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
-
-							<h3><a href="single.html">Ver detalles</a></h3>
-
-							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.250</span>
@@ -222,10 +214,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="home-product-bottom">
 
 							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
-
-							<h3><a href="single.html">Ver detalles</a></h3>
-
-							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.150</span>
@@ -241,9 +229,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
 
-							<h3><a href="single.html">Ver detalles</a></h3>
-
-							<p></p>
 					</div>
 					<div class="srch">
 						<span>L.200</span>

@@ -446,6 +446,13 @@ ul.bann-btns li a:hover {
 	background:#0B6F07;
 }
 /*--block-layer2 start here--*/
+.fondopantalla {
+    background: url(../img/portada2.jpg)no-repeat;/*96.jpg*/
+    /*background-position: 0px -260px;*/
+    background-position: center center;
+    min-height:550px;
+    background-size: cover;
+}
 .blc-layer2 {
     background: url(../img/portada1.jpeg)no-repeat;/*96.jpg*/
     /*background-position: 0px -260px;*/

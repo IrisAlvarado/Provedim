@@ -8,10 +8,12 @@
  <link rel="stylesheet" href="css/estilos.css">
  <link rel="stylesheet" type="text/css" href="css/all.css">
  
+ 
  <title>Principal</title>
 </head>
-<body style="background-color: rgb(233, 233, 233);">
+<body background="img/portada4.jpeg">
   <!----background-color:rgba(198, 228, 232, 0.49); rgb(233, 233, 233);-->
+<div class="fondopantalla">
  <div class="container">
 
       
@@ -21,7 +23,7 @@
      <div class="col-md-5" style="background-color:#fff;box-shadow: 12px 12px 20px -7px rgba(0, 0, 0, 0.75);margin-top: 30px;margin-bottom: 30px;">
       <br><!---#1012133b;--->
       <center>
-        <h4 style="color:#f90075">PROVEDIM</h4>
+        <h4 style="color:#2C9C29">PROVEDIM</h4>
         <h4 class="" style="color: #000000">Bienvenido(a) a nuestra plataforma </h4>
         <h4></h4>
        
@@ -37,8 +39,8 @@
             <i class="fas fa-user fa-2x" style="color: #000"></i>
           </div>
           <div class="col-10">
-            <input type="text" name="nombres" id="nombres" placeholder="Escriba su nombre" class="form-control" >
-            <span style="color: red;display: none" id="avisoNombres" >Escriba los dos nombres</span>
+            <input type="text" name="nombres" id="nombres" placeholder="Nombre de la Empresa" class="form-control" >
+            <span style="color: red;display: none" id="avisoNombres" >Escriba el nombre de su empresa</span>
           </div>    
         </div>
         <div class="form-row py-2">
@@ -48,10 +50,20 @@
             <i class="fas fa-user fa-2x" style="color: #000"></i>
           </div>
           <div class="col-10">
-            <input type="text" name="apellidos" id="apellidos" placeholder="Escriba sus apellidos" class="form-control"> 
-            <span style="color: red;display: none" id="avisoapellidos" >Escriba los dos apellidos</span>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Nombre del Administrador" class="form-control"> 
+            <span style="color: red;display: none" id="avisoapellidos" >Escriba el nombre del admin</span>
           </div>
                             
+        </div>
+        <div class="form-row py-2">
+        <div class="col-1" style="
+    padding-left: 0px;padding-right: 0px;">
+          <i class="fas fa-map-marker-alt fa-2x" style="color: #000"></i>
+        </div>
+        <div class="col-10">
+            <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="form-control"> 
+            <span style="color: red;display: none" id="avisoapellidos" >Escriba la dirección de su empresa</span>
+          </div>
         </div>
        <div class="form-row ">
          <div class="col-1" style="
@@ -59,12 +71,12 @@
            <i class="fas fa-envelope fa-2x" style="color: #000"></i> 
          </div>  
 	       <div class="col-10">
-	         <input type="text" name="correo" id="correo" placeholder="Ingrese el correo" class="form-control">
+	         <input type="text" name="correo" id="correo" placeholder="Correo Electrónico" class="form-control">
 	         <span style="color: red;display: none" id="avisoCorreo" >Ingresa un correo valido</span> 
 	         <span style="color: red;display: none" id="avisoCorreoExistente" >El correo ya existe.</span> 
 	       </div>
       </div>
-   			<div class="form-row py-2">
+   			<!--div class="form-row py-2">
         <div class="col-1" style="
     padding-left: 0px;padding-right: 0px; bord">
           <i class="fas fa-phone-alt fa-2x " style="color: #000"></i>
@@ -73,8 +85,8 @@
         	<input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono" class="form-control">
         	<span style="color: red;display: none" id="avisoTelefono" >Telefono no valido.</span> 
         </div>
-      </div>
-      <div class="form-row ">
+      </div-->
+      <!--div class="form-row ">
       	<div class="col-1" style="
     padding-left: 0px;padding-right: 0px;">
       		<i class="fas fa-calendar-alt fa-2x" style="color: #000"></i>
@@ -84,20 +96,15 @@
       		<span style="color: red;display: none" id="avisoFechaNacimiento" >Debes ser mayor de 21 años para registrate.</span> 
       		<span style="color: red;display: none" id="avisoFechaNacimiento2" >Ingresa una fecha de nacimiento.</span> 
       	</div>
-      </div>
-      <div class="form-row py-2">
-      	<div class="col-1" style="
-    padding-left: 0px;padding-right: 0px;">
-      		<i class="fas fa-map-marker-alt fa-2x" style="color: #000"></i>
-      	</div>
-      	<div class="col-10">
+      </div-->
+      	<!--div class="col-10">
       		<select id="departamentos" class="form-control">
           <option selected="selected" value="null">No hay nada que cargar</option>
         </select>
         <span style="color: red;display: none" id="avisoDepto">Debe seleccionar un departamento</span>
       	</div>
-      </div>
-      <div class="form-row">
+      </div-->
+      <!--div class="form-row">
       	<div class="col-1" style="
     padding-left: 0px;padding-right: 0px;">
       		<i class="fa fa-map-marker fa-2x" style="color: #000"></i>
@@ -108,7 +115,7 @@
         </select>
         <span style="color: red;display: none" id="avisoMunicipio">Debe seleccionar un municipio</span>
       	</div>
-      </div>
+      </div-->
       <div class="form-row py-2">
       	<div class="col-1" style="
     padding-left: 0px;padding-right: 0px;">
@@ -119,7 +126,7 @@
       		<span style="color: red;display: none" id="avisoContrasena" >La contrasena debe contener    más de 8 caracteres.</span>
       	</div>
       </div>
-      <div class="form-row ">
+      <!--div class="form-row ">
       	<div class="col-1" style="
     padding-left: 0px;padding-right: 0px;">
       		<i class="fas fa-lock fa-2x" style="color: #000"></i>
@@ -128,25 +135,28 @@
       		<input type="password" name="confContrasenia" id="confContrasenia" placeholder="Vuelva a escribir la contraseña" class="form-control">
       		<span style="color: red;display: none" id="avisoContrasena2" >La contrasena debe ser igual a la anterior.</span>
       	</div>
-      </div>
+      </div-->
 
       <div class="form-group py-3">
         <fieldset>
-          <legend>Elija el tipo de plan:</legend>
+          <legend>Plan de Suscripción:</legend>
           <label for="radio">
-            <input type="radio" name="tipo" id="tiposEmpresa" value="1">Basico 
+            <input type="radio" name="tipo" id="tiposEmpresa" value="1">Básico 
+          </label>
+           <label for="radio">
+            <input type="radio" name="tipo" id="tipoPlan" value="2">Estándar 
           </label>
           <label for="radio">
-            <input type="radio" name="tipo" id="tipoComun" value="2" checked="checked">
+            <input type="radio" name="tipo" id="tipoComun" value="3" checked="checked">
             Premium
           </label>
         </fieldset>
-        <input type="checkbox" name="contrato" id="contrato" >Acepta <a href="" data-toggle="modal" data-target="#exampleModalLong">terminos y condiciones</a>
+        <input type="checkbox" name="contrato" id="contrato" >Acepta <a href="" data-toggle="modal" data-target="#exampleModalLong">términos y condiciones</a>
         <br>
-      <span style="color: red;display: none" id="avisoContrato" >Debe aceptar los terminos y condiciones para registrarse.</span>
+      <span style="color: red;display: none" id="avisoContrato" >Debe aceptar los términos y condiciones para registrarse.</span>
       </div>
-      <button type="button" id="btnGuardar" class="btn btn-primary btn-block">Guardar</button>
-      <a href="inicio.php" id="" class="btn btn-danger btn-block">Pagina Principal</a>
+      <button type="button" id="btnGuardar" class="btn btn-info btn-block">Guardar</button>
+      <a href="inicio.php" id="" class="btn btn-dark btn-block">Cancelar</a>
       <br><br>
       </form>
      </div>
@@ -229,7 +239,7 @@
       </div>
     </div>
   </div>
- 
+ </div>
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
