@@ -152,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  		<h1>Catalogo de Productos</h1>
 			  	</div>
 			  	<div class="col-md-6">
-			  		<button type="button" class="btn btn-link" style="margin-left:49%;"><a href="product.php" id="show">Mostrar todos los Anuncios</a></button>
+			  		<button type="button" class="btn btn-link" style="margin-left:49%;"><a href="catalogo.php" id="show">Mostrar todos los Anuncios</a></button>
 			  	</div>
 			  </div>
 
