@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: auto;
+	height: auto;
+}
+.sidebar {
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	background: #333333;
+	color: #ffffff;
+	outline: 1px solid #2a2a2a;
+	transition: all 500ms linear;
+}
+
+.sidebar h2 {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background: #2a2a2a;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	outline: 1px solid #2a2a2a;
+	transition: all 0.3s;
+}
+
+.sidebar li:hover {
+	background: #444444;
+	border-left: 5px solid #eeeeee;
+}
+
+.sidebar a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 5px;
+}
+
+.sidebar span {
+	margin-right: 10px;
+}
+
+.contenido {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #bcedda;
+	padding: 30px;
+	box-sizing: border-box;
+	transition: all 500ms linear;
+}
+
+.desplazar {
+	margin-left: 250px;
+}
+
+.icon-menu {
+	cursor: pointer;
+}
+
+.contenido h2 {
+	width: 50%;
+	display: inline-block;
+}
+.contenido h3 {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+#logo {
+	width: 40% 40%;
+}
+
+#img {
+	width: 10%;
+	display: inline-block;
+	margin-top: 20px;
+}
+#datos-prov {
+	width: 90%;
+	float: right;
+	margin-top: 20px;
+}
+
+#datos-prov h2 {
+	display: block;
+}
+
+#datos-prov h5 {
+	display: block;
+}
+
+#datos-prov h6 {
+	display: block;
+}
+
+#bt-cargar {
+	margin: 0 auto;
+}
+
+.icon-upload {
+	margin-right: 8px;
+}
+.container {
+	margin-top: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.btn {
+	align-content: center;
+}
+
+#label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.icon-clipboard {
+	margin-right: 8px;
+}
+
+#bt-guardar {
+	margin: auto auto;
+}
+
+.bt-registro {
+	width: 50%;
+	align-content: center;
+}
+
+.icon-floppy-disk {
+	margin-right: 8px;
+}
+
+.card {
+	align-content: center;
+	margin: auto 0;
+}
+
+.card-body {
+	background: #f1f1f1 important;
+}

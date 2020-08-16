@@ -1,12 +1,12 @@
-<?php 
+<?php
 
-include '../backend/seguridad_admin.php';
+//include '../backend/seguridad_admin.php';
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PUBLITODO</title>
+	<title>Provedim</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<!--link href="css/font-awesome.css" rel="stylesheet"-->
 	<link rel="stylesheet" type="text/css" href="../css/all.css">
@@ -18,8 +18,8 @@ include '../backend/seguridad_admin.php';
 	<?php
       include 'navbarAdmin.php';
     ?>
-	
-	<div><br><br><br><br></div>	
+
+	<div><br><br><br><br></div>
 	<!--Prueba-->
 	<section id="main">
       <div class="container-fluid px-3">
@@ -27,12 +27,14 @@ include '../backend/seguridad_admin.php';
         <!--Columna agregar o editar -->
           <div class="col-md-4" >
 				 <!--Columna agregar -->
-				 <br><br>
-				<div class="py-5" id="agregarCat" name="agregarCat">
+				 <br><br><br><br><br><br>
+
+				<div class="py-5 jumbotron" id="agregarCat" name="agregarCat">
 					<div class="list-group">
-		              <button class="list-group-item active  bg-success text-light bg-dark" id="Agregar">
+		              <!--button class="list-group-item active  bg-success text-light bg-dark" id="Agregar">
 		                Agregar Categoria&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-plus-circle fa-lg"></i>
-		              </button>
+		              </button-->
+		              <h2 id="addCat">Agregar Nueva Categoria</h2>
 		             <div class="list-group">
 		             	<div class="py-1">
 							<br><br><h4 class="font-weight-bold">Datos Categoria</h4>
@@ -56,8 +58,8 @@ include '../backend/seguridad_admin.php';
 
 		         <!--Columna editar -->
 
-				<div id="editarCat" name="editarCat" style="display: none">
-					<br>
+				<div class="" id="editarCat" name="editarCat" style="display: none">
+					<br><br><br>
 					<div class="list-group">
 		              <button class="list-group-item active  bg-success text-light bg-dark" id="Agregar">
 		                Editar Categoria
@@ -97,11 +99,12 @@ include '../backend/seguridad_admin.php';
             <!-- Vista rápida del sitio -->
               <!-- últimos usuarios -->
               <div class="panel panel-default">
+              	<br><br><br>
                 <div class="panel-heading main-color-bg">
-                  <h3 class="panel-title"><h3 class="panel-title">Lista Categorias</h3>
+                  <h3 class="panel-title"><h1 class="panel-title" id="listcat">Lista Categorias</h1>
                 </div>
-                <br><br>    
-                <div><span class="alert alert-danger" id="msjDelete"  style=" display: none; color:red"></span><br><br></div>   
+
+                <div><span class="alert alert-danger" id="msjDelete"  style=" display: none; color:red"></span><br><br></div>
                 <div id="div_ini"></div>
                 <div id="div_table"></div>
           </div>

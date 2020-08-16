@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registrar Producto</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/estilos.css" />
+		<link rel="stylesheet" href="fonts.css" />
+	</head>
+	<body>
+		<div class="sidebar">
+			<ul>
+				<h2>MENÚ</h2>
+				<li>
+					<a href=""><span class="icon-home"></span>INICIO</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-file-text"></span>CATÁLOGO</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-cart"></span>PRODUCTOS</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-list"></span>CATEGORÍAS</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-stats-bars"></span>COTIZACIONES</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-question"></span>AYUDA</a>
+				</li>
+				<li>
+					<a href=""><span class="icon-cog"></span>CONFIGURACIÓN</a>
+				</li>
+			</ul>
+		</div>
+		<div id="contenido" class="contenido">
+			<h2>
+				<a href="#"><span class="icon-menu"></span></a> PROVEDIM
+			</h2>
+			<h3>
+				Proveedor<a href="#"><span class="icon-user-tie"></span></a>
+			</h3>
+			<div class="nom-prov">
+				<div id="img">
+					<img id="logo" src="img/logoprov.png" alt="" />
+				</div>
+				<div id="datos-prov">
+					<h2>PRODENTAL</h2>
+					<h5>Venta de producto médico y de bioseguridad</h5>
+					<h6>Administrador: Jesús Chinchilla</h6>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<label id="label" for=""
+							><span class="icon-clipboard"></span>INFORMACIÓN DEL PRODUCTO</label
+						>
+						<section>
+							<label for="">Nombre</label><br />
+							<input
+								id="txt-producto"
+								class="form-control"
+								type="text"
+								placeholder="Nombre del producto"
+								value=""
+							/><br />
+							<label for="">Marca</label><br />
+							<input
+								id="txt-marca"
+								class="form-control"
+								type="text"
+								placeholder="Marca del producto"
+								value=""
+							/><br />
+							<label for="">Descripción</label><br />
+							<textarea
+								id="txt-descripcion"
+								class="form-control"
+								placeholder="Descripción"
+								rows="4"
+								cols="20"
+								value=""
+							></textarea
+							><br />
+							<select id="s-categoria" class="form-control" name="categoria">
+								<option value="1">Mascartillas</option>
+								<option value="2">Alcohol</option>
+								<option value="3">Gel antibacterial</option>
+								<option value="4">Guantes</option>
+							</select>
+						</section>
+					</div>
+					<div class="col-sm-4">
+						<div class="card" style="width: auto;">
+							<img id="img" src="img/respirador.png" class="card-img-top" alt="respirador" />
+							<div class="card-body">
+								<button id="bt-cargar" type="button" class="btn btn-success btn-lg btn-block">
+									<span class="icon-upload"></span>Cargar imagen
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<label for="">Precio de venta</label><br />
+						<input
+							id="txt-precio"
+							class="form-control"
+							type="text"
+							placeholder="L."
+							value=""
+						/><br />
+						<label for="">Cantidad disponible</label><br />
+						<input
+							id="txt-cantidad"
+							class="form-control"
+							type="text"
+							placeholder="Cantidad disponible"
+							value=""
+						/><br />
+						<label for="">Código de barras</label><br />
+						<input
+							id="txt-codigo"
+							class="form-control"
+							type="text"
+							placeholder="Código de barras"
+							value=""
+						/><br />
+						<button
+							id="bt-guardar"
+							type="button"
+							class="btn btn-success btn-lg btn-block"
+							onclick="validarProducto()"
+						>
+							<span class="icon-floppy-disk"></span>Registrar Producto
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Script para la integración de JavaScrpt-->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script src="abrir_menu.js"></script>
+		<script src="validarProducto.js"></script>
+	</body>
+</html>

@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
  <link rel="stylesheet" href="css/estilos.css">
  <link rel="stylesheet" type="text/css" href="css/all.css">
  
@@ -242,8 +243,6 @@
  </div>
 </body>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script  src="js/all.js"></script>
 <script src="js/registroUsuarioNormal.js"></script>
 

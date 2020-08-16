@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PUBLITODO</title>
+	<title>Provedim</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/all.css">
 	<link rel="stylesheet" type="text/css" href="../css/navbarAdmin.css">
@@ -11,36 +10,62 @@
 	<!--barra de navegacion para el administrador-->
 	<div class="fixed-top">
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark colorNavbar">
-		  <a class="navbar-brand font-weight-bold" href="index.php" id="index">PUBLITODO</a>
+		  <a class="navbar-brand font-weight-bold logo" href="index.php" id="index"><img src="../logo/logo2.jpeg" alt="" id="logo"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item " id="publicaciones">
+		      <!--li class="nav-item " id="publicaciones">
 		        <a class="nav-link  font-weight-bold" href="publicaciones-admin.php">Publicaciones <span class="sr-only">(current)</span></a>
+		      </li-->
+
+		      <li class="nav-item " id="#">
+		        <a class="nav-link  font-weight-bold" href="../index.php" tabindex="-1" aria-disabled="true"><b>Home</b></a>
 		      </li>
-		      <li class="nav-item " id="usuarios">
+
+		      <li class="nav-item " id="#">
+		        <a class="nav-link  font-weight-bold" href="../index.html#quienes-somos" tabindex="-1" aria-disabled="true"><strong>¿Quiénes Somos?</strong></a>
+		      </li>
+
+		      <li class="nav-item " id="#">
+		        <a class="nav-link  font-weight-bold" href="../#catalogo" tabindex="-1" aria-disabled="true"><strong>Catálogo</strong></a>
+		      </li>
+
+		      <li class="nav-item " id="#">
+		        <a class="nav-link  font-weight-bold" href="../index.html#cotizaciones" tabindex="-1" aria-disabled="true"><strong>Cotizaciones</strong></a>
+		      </li>
+
+		      <li class="nav-item " id="">
+		        <a class="nav-link  font-weight-bold" href="../index.html#proveedores" tabindex="-1" aria-disabled="true"><strong>Proveedores</strong></a>
+		      </li>
+
+		      <li class="nav-item " id="">
+		        <a class="nav-link  font-weight-bold" href="../contact.html" tabindex="-1" aria-disabled="true"><strong>Contáctenos</strong></a>
+		      </li>
+
+
+
+
+		      <!--li class="nav-item " id="usuarios">
 		        <a class="nav-link  font-weight-bold" href="verUsuariosDesdeAdminF.php" tabindex="-1" aria-disabled="true">Usuarios</a>
 		      </li>
 			  <li class="nav-item " id="solicitudes">
 		        <a class="nav-link  font-weight-bold" href="solicitudes_administracion.php" tabindex="-1" aria-disabled="true">Solicitudes</a>
-		      </li>
-		      <li class="nav-item " id="categorias">
-		        <a class="nav-link  font-weight-bold" href="categorias.php" tabindex="-1" aria-disabled="true">Categorias</a>
-		      </li>
+		      </li-->
+
 
 		   	  <!--li class="nav-item" id="productos">
 		        <a class="nav-link  font-weight-bold" href="productos.php" tabindex="-1" aria-disabled="true">Productos</a>
 		      </li--->
 
-		      <li class="nav-item" id="denuncias">
+		      <!--li class="nav-item" id="denuncias">
 		        <a class="nav-link  font-weight-bold" href="denuncias.php" tabindex="-1" aria-disabled="true">Denuncias</a>
 		      </li>
 		      <li class="nav-item" id="reportes">
 		        <a class="nav-link  font-weight-bold" href="estadisticas.php" tabindex="-1" aria-disabled="true">Reportes</a>
-		      </li>
+		      </li-->
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
 		    <div class="btn-group" style="">
