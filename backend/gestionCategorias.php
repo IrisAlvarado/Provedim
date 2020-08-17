@@ -1,12 +1,12 @@
 <?php
-	
-	$mysqli = new mysqli("localhost:3306", "root", "", "mydb");
 
-	
+	$mysqli = new mysqli("localhost:3308", "root", "", "mydb");
+
+
 	switch($_GET["accion"]){
 
 		case 'obtenerTodos':
-			
+
 			$mysqli->multi_query("SET @p0=''; SET @p1=''; SET @p2='obtenerTodos'; SET @p3=''; CALL SP_CATEGORIAS(@p0, @p1, @p2, @p3, @p4);");
 			$resultadoConsulta = array();
 			do {
@@ -16,7 +16,7 @@
         				$resultadoConsulta[] = $fila;
 
 			            }
-			        
+
 			        $resultado->free();
 			    } else {
 			        if ($mysqli->errno) {
@@ -26,9 +26,9 @@
 			} while ($mysqli->more_results() && $mysqli->next_result());
 
 			echo json_encode($resultadoConsulta);
-	
+
 		break;
-					
+
 
 		case 'eliminar':
 			$idCat=$_GET["idCategoria"];
@@ -44,7 +44,7 @@
         				$resultadoConsulta[] = $fila;
 
 			            }
-			        
+
 			        $resultado->free();
 			    } else {
 			        if ($mysqli->errno) {
@@ -54,7 +54,7 @@
 			} while ($mysqli->more_results() && $mysqli->next_result());
 
 			echo json_encode($resultadoConsulta);
-			
+
 		break;
 
 		case 'editar':
@@ -73,7 +73,7 @@
         				$resultadoConsulta[] = $fila;
 
 			            }
-			        
+
 			        $resultado->free();
 			    } else {
 			        if ($mysqli->errno) {
@@ -88,7 +88,7 @@
 
 		case 'nuevo':
 			$nombreCat=$_GET["nombreCate"];
-			
+
 
 			// $mysqli->multi_query("SET @p0='".$nombreCat."'; SET @p1=''; SET @p2='guardar'; SET @p3=''; CALL `SP_CATEGORIAS`(@p0, @p1, @p2, @p3, @p4); SELECT @p4 AS `mensaje`;");
 
@@ -100,7 +100,7 @@
         	// 			$resultadoConsulta[] = $fila;
 
 			//             }
-			        
+
 			//         $resultado->free();
 			//     } else {
 			//         if ($mysqli->errno) {
@@ -110,21 +110,28 @@
 			// } while ($mysqli->more_results() && $mysqli->next_result());
 
 			// echo json_encode($resultadoConsulta);
-			
+
 			$idcategoria = "";
 			$pestado="";
 			$accion = 'guardar';
 			$call = $mysqli->prepare('CALL SP_CATEGORIAS(?, ?, ?, ? , @mensaje)');
             $call->bind_param('siss', $nombreCat, $idcategoria, $accion,$pestado);
             $call->execute();
-            
+
             $select = $mysqli->query('SELECT  @mensaje');
-            
+
             $result = $select->fetch_assoc();
+
 			$mensaje = $result['@mensaje'];
-			
-			echo json_encode(array("Mensaje"=>$mensaje));
-					
+			/*if (is_array($mensaje)) {
+				# code...
+				$mensaje = $mensaje + "1";
+				echo json_encode($mensaje);
+			}else{*/
+				echo json_encode($mensaje);
+			//}
+
+
 		break;
 
 		case 'buscarNombre':
@@ -141,7 +148,7 @@
         				$resultadoConsulta[] = $fila;
 
 			            }
-			        
+
 			        $resultado->free();
 			    } else {
 			        if ($mysqli->errno) {
@@ -151,7 +158,7 @@
 			} while ($mysqli->more_results() && $mysqli->next_result());
 
 			echo json_encode($resultadoConsulta);
-					
+
 		break;
 
 	}
