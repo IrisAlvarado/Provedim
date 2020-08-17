@@ -27,10 +27,10 @@ function obtenerCategorias(){
 			                    '<td>'+respuesta[i].descripcion+'</td>'+
 			                    //'<td>'+respuesta[i].estado+'</td>'+
 			                    '<td>'+
-			                    '<button class="btn btn-outline-danger" type="button" id="btnEliminar'+respuesta[i].idCategorias+'" onclick="eliminarCategorias('+respuesta[i].idCategorias +')"><i class="fas fa-trash-alt fa-lg" style=""></i></button>'+ 
+			                    '<button class="btn btn-outline-danger" type="button" id="btnEliminar'+respuesta[i].idCategorias+'" onclick="eliminarCategorias('+respuesta[i].idCategorias +')"><i class="fas fa-trash-alt fa-lg" style=""></i></button>'+
 			                    '</td>'+
 			                    '<td>'+
-			                    '<button class="btn btn-outline-primary" type="button" id="btnEdit'+respuesta[i].idCategorias+'"   onclick="editarCategorias('+respuesta[i].idCategorias+','+"'"+respuesta[i].descripcion+"'"+')"><i class="fas fa-edit fa-lg" style=""></i></button>'+ 
+			                    '<button class="btn btn-outline-primary" type="button" id="btnEdit'+respuesta[i].idCategorias+'"   onclick="editarCategorias('+respuesta[i].idCategorias+','+"'"+respuesta[i].descripcion+"'"+')"><i class="fas fa-edit fa-lg" style=""></i></button>'+
 			                    '</td>'+
 			                  '</tr>';
 			}
@@ -51,7 +51,7 @@ function guardarCategorias(){
 	if (validarRegistro()) {
 		var parametros= "nombreCate="+$("#nombreCat").val();
 					//alert(parametros);
-	
+
 		$.ajax({
 			url:"../backend/gestionCategorias.php?accion=nuevo",
 			method:"GET",
@@ -60,30 +60,30 @@ function guardarCategorias(){
 			success:function(respuesta){
 				console.log(respuesta);
 				//alert(respuesta[0].mensaje);
-				
-				$("#msjG").addClass("alert-danger");
-				$("#msjG").html(respuesta[0].mensaje);
+
+				$("#msjG").addClass("alert-primary");
+				$("#msjG").html(respuesta);
 				$("#msjG").fadeIn();
-				$("#msjG").fadeOut(2000);	
+				$("#msjG").fadeOut(2000);
 
 				$("#nombreCat").val('');
 				obtenerCategorias();
 			}
 		});
-		
+
 		//window.location.replace("categorias.php");
-		
+
 	}else {
 		//alert("Campos requeridos");
 	}
-	
+
 }
 
 
 function eliminarCategorias(idCategoria){
 
 	var parametros = "idCategoria="+idCategoria;
-	
+
 	//alert(parametros);
 	$.ajax({
 		url:"../backend/gestionCategorias.php?accion=eliminar",
@@ -98,12 +98,12 @@ function eliminarCategorias(idCategoria){
 				$("#msjDelete").html(respuesta[0].mensaje);
 				$("#msjDelete").fadeIn();
 				$("#msjDelete").fadeOut(2000);
-				
+
 				obtenerCategorias();
 				//window.location.replace("denuncias.php");
 			//
 			}
-			
+
 		}
 	});
 
@@ -118,9 +118,9 @@ function editarCategorias(idCategoria,nombreCat){
 	//llenado de codigo categoria a editar
 	$("#cod").val(idCategoria);
 	$("#nombreCatEdit").val(nombreCat);
-	
+
 	//alert(idCategoria,nombreCat);
-	//$("#nombreCatEdit").value('Hola', nombreCat); 
+	//$("#nombreCatEdit").value('Hola', nombreCat);
 
 }
 //Funcion para cambiar el nombre a la categoria
@@ -148,22 +148,22 @@ function editCategorias(){
 
 					$("#editarCat").fadeOut();
 					$("#agregarCat").fadeIn();
-					
+
 					obtenerCategorias();
 				}
-				
+
 			}
 		});
-		
-		
+
+
 		//window.location.replace("categorias.php");
 	}
-	
-	
+
+
 }
 
 var validarCampoVacio = function(id){
-	
+
 	if ($("#"+id).val() == ""){
 		$("#"+id).removeClass('is-valid');
 		$("#"+id).addClass('is-invalid');
@@ -177,7 +177,7 @@ var validarCampoVacio = function(id){
 };
 
 function validarRegistro(){
-	
+
 	var nombre=validarCampoVacio("nombrePro");
 	if (nombre) {
 		$("#avisoPro").fadeOut();
@@ -191,7 +191,7 @@ function validarRegistro(){
 }
 
 function validarEditar(){
-	
+
 	var nombre=validarCampoVacio("nombreCatEdit");
 	if (nombre) {
 		$("#avisoCatE").fadeOut();
@@ -205,7 +205,7 @@ function validarEditar(){
 }
 
 function validarBuscar(){
-	
+
 	var nombre=validarCampoVacio("buscarCat");
 	if (nombre) {
 		$("#avisoCatB").fadeOut();
@@ -247,10 +247,10 @@ function buscar(){
 				                    '<td>'+respuesta[i].descripcion+'</td>'+
 				                    //'<td>'+respuesta[i].estado+'</td>'+
 				                    '<td>'+
-				                    '<button class="btn btn-primary" type="button" id="btnEliminar'+respuesta[i].idCategorias+'" onclick="eliminarCategorias('+respuesta[i].idCategorias +')">Eliminar</button>'+ 
+				                    '<button class="btn btn-primary" type="button" id="btnEliminar'+respuesta[i].idCategorias+'" onclick="eliminarCategorias('+respuesta[i].idCategorias +')">Eliminar</button>'+
 				                    '</td>'+
 				                    '<td>'+
-				                    '<button class="btn btn-primary" type="button" id="btnEdit'+respuesta[i].idCategorias+'"   onclick="editarCategorias('+respuesta[i].idCategorias+','+"'"+respuesta[i].descripcion+"'"+')">Editar</button>'+ 
+				                    '<button class="btn btn-primary" type="button" id="btnEdit'+respuesta[i].idCategorias+'"   onclick="editarCategorias('+respuesta[i].idCategorias+','+"'"+respuesta[i].descripcion+"'"+')">Editar</button>'+
 				                    '</td>'+
 				                  '</tr>';
 				}
@@ -312,6 +312,6 @@ function cargarTabla(){
                         });
                     });
                 }*/
-		
+
 	});
 }
