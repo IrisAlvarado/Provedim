@@ -157,7 +157,7 @@
       <span style="color: red;display: none" id="avisoContrato" >Debe aceptar los términos y condiciones para registrarse.</span>
       </div>
       <button type="button" id="btnGuardar" class="btn btn-info btn-block">Guardar</button>
-      <a href="inicio.php" id="" class="btn btn-dark btn-block">Cancelar</a>
+      
       <br><br>
       </form>
      </div>

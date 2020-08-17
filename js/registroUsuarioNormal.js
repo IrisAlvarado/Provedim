@@ -30,10 +30,10 @@ $("#btnGuardar").on("click", () => {
         console.log(data);
 
         $.ajax({
-            url: "../backend/registro_usuario.php",
+            url: "backend/registro_usuario.php",
+            dataType: 'json',
             data: data,
             method: "POST",
-            dataType: "json",
             success: function (respuesta) {
                 console.log(respuesta);
 
