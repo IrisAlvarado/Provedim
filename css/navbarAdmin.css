@@ -13,7 +13,8 @@ body{
 }
 
 #addCat{
-	padding-left: 70px;
+	margin-left: -15px;
+	width: 550px;
 }
 
 #btnGuardarC, #btnEditarC{
@@ -28,9 +29,23 @@ body{
 }
 
 #listcat{
-	color: white;
-	margin-left: 270px;
+	color: black;
+	margin-left: 150px;
 	margin-bottom: -10px;
+
+
+}
+
+.contenedorTitle{
+	width: 1300px!important;
+}
+
+.contenido h3 {
+   width: 50%!important;
+}
+
+#dates{
+	width: 100%!important;
 }
 
 .jumbotron{
