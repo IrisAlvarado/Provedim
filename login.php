@@ -43,7 +43,7 @@
 											</div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small ml-auto" href="password.html">¿Olvidaste la contraseña?</a></div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <button class="btn btn-primary form-control" type="submit">Ingresar</button>
+                                                <button class="btn btn-primary form-control" type="submit" href="principal.php">Ingresar</button>
                                             </div>
 
                                         </form>
