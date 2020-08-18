@@ -42,3 +42,26 @@ function validarProducto() {
 		return true;
 	}
 }
+
+$("#bt-guardar").click(function(){
+	if ( validarProducto() ) {
+		//console.log("Entro");
+		var parametros= 
+			"nombre="+$("#txt-producto").val()+"&"+
+            "marca="+$("#txt-marca").val()+"&"+
+            "descripcion="+$("#txt-descripcion").val()+"&"+
+            "categoria="+$("#s-categoria").val()+"&"+
+			"precio="+$("#txt-precio").val()+"&"+
+            "cantidad="+$("#txt-cantidad").val()+"&"+
+			"codigo="+$("#txt-codigo").val();
+			
+		console.log(parametros);		
+		
+		$.ajax({
+			url:"../backend/apiProductos.php?accion=guardarRegistro",
+			method:"POST",
+			data:parametros,
+			dataType:"json"
+		});	
+	}	
+});
