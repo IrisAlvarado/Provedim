@@ -9,6 +9,7 @@
 		private $precio;
 		private $cantidad;
 		private $codigo;
+		private $urlImagen;
         
 		public function __construct($nombre,
 					$marca,
@@ -16,7 +17,8 @@
                     $categoria,
                     $precio,
                     $cantidad,
-                    $codigo
+					$codigo,
+					$urlImagen
                     ){
 			$this->nombre = $nombre;
 			$this->marca = $marca;
@@ -25,6 +27,7 @@
 			$this->precio = $precio;
 			$this->cantidad = $cantidad;
 			$this->codigo = $codigo;
+			$this->urlImagen = $urlImagen;
 		}
 		public function getNombre(){
 			return $this->nombre;
@@ -68,17 +71,25 @@
 		public function setCodigo($codigo){
 			$this->codigo = $codigo;
 		}
+		public function getUrlImagen(){
+			return $this->urlImagen;
+		}
+		public function setUrlImagen($urlImagen){
+			$this->urlImagen = $urlImagen;
+		}
+
 		public function guardarRegistroBase($conexion){
-			$sql = sprintf("INSERT INTO productos(nombre, marca, descripcion, categoria, precio, cantidad, codigo) VALUES ('%s','%s','%s','%s','%s','%s','%s');",
+			$sql = sprintf("INSERT INTO productos(nombre, marca, descripcion, categoria, precio, cantidad, codigo, urlImagen) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s');",
 				$conexion->antiInyeccion($this->nombre),
 				$conexion->antiInyeccion($this->marca),
 				$conexion->antiInyeccion($this->descripcion),
                 $conexion->antiInyeccion($this->categoria),
 				$conexion->antiInyeccion($this->precio),
 				$conexion->antiInyeccion($this->cantidad),
-				$conexion->antiInyeccion($this->codigo)
+				$conexion->antiInyeccion($this->codigo),
+				$conexion->antiInyeccion($this->urlImagen)
 			);
-			$resultado = $conexion->ejecutarConsulta($sql);
+			$resultado = $conexion->ejecutarConsulta($sql);			
 		}
 	}
 ?>
