@@ -39,13 +39,13 @@ function validarProducto() {
 		alert('El cógido ingresado');
 		return false;
 	} else {
+		$("#modalSubirImagen").modal('show');
 		return true;
 	}
 }
 
 $("#idGuardarRegistro").click(function(){
 	//console.log("Entro");
-	$("#modalSubirImagen").modal('show');
 
 	var parametros= 
 		"nombre="+$("#txt-producto").val()+"&"+
