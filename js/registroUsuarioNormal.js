@@ -30,14 +30,14 @@ $("#btnGuardar").on("click", () => {
         console.log(data);
 
         $.ajax({
-            url: "backend/registro_usuario.php",
+            url: "../registro_usuario.php",
             dataType: 'json',
             data: data,
             method: "POST",
             success: function (respuesta) {
                 console.log(respuesta);
 
-                if (respuesta.codigo == 1) {
+                if (respuesta.codigo == 0) {
                     //$("#regAdmin").fadeIn();
                    // $("#regAdmin").fadeOut(3000);
                     var url = "http://localhost/Provedim/Provedim/usuarioCV/perfil.php";

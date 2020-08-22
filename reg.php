@@ -5,7 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="css/bootstrap.min.css">
- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
  <link rel="stylesheet" href="css/estilos.css">
  <link rel="stylesheet" type="text/css" href="css/all.css">
  
@@ -32,7 +32,7 @@
       
       <center class="py-1 text-primary"><h5>iYa puedes registrarte!</h5> 
       </center>
-      <form role="form">
+      <form id="frmajax" method="POST">
         <div class="form-row">
           <div class="col-1" style="
     padding-left: 0px;padding-right: 0px;">
@@ -141,7 +141,7 @@
       <div class="form-group py-3">
         <fieldset>
           <legend>Plan de Suscripción:</legend>
-          <label for="radio">
+          <label for="radio" name="tipoUsuario">
             <input type="radio" name="tipo" id="tiposEmpresa" value="1">Básico 
           </label>
            <label for="radio">
@@ -156,7 +156,7 @@
         <br>
       <span style="color: red;display: none" id="avisoContrato" >Debe aceptar los términos y condiciones para registrarse.</span>
       </div>
-      <button type="button" id="btnGuardar" class="btn btn-info btn-block">Guardar</button>
+      <button type="button" id="btnGuardar" class="btn btn-info btn-block" action="principal.php">Guardar</button>
       
       <br><br>
       </form>
@@ -243,7 +243,8 @@
  </div>
 </body>
 
-<script  src="js/all.js"></script>
+</html>
+<script src="js/all.js"></script>
 <script src="js/registroUsuarioNormal.js"></script>
 
-</html>
+

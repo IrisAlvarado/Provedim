@@ -156,12 +156,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  	</div>
 			  </div>
 
-			  <div class="col-md-12 product-block">
-			  		<div id="generarAnuncios">
-
-			  		</div>
+			  <div id="obtenerProductos"></div>
+			  <!--div class="col-md-9 product-block">
+			      <div class="col-md-4 home-grid">
+					<div class="home-product-main">
+					   <div class="home-product-top">
+					      <a href="single.html"><img src="images/h5.jpg" alt="" class="img-responsive zoom-img"></a>
+					   </div>
+						<div class="home-product-bottom">
+								<h3><a href="single.html">Smart Shoppingsasa</a></h3>
+								<p>Explore Now</p>						
+						</div>
+						<div class="srch">
+							<span>$200</span>
+						</div>
+					</div>
+				 </div>
 			      <div class="clearfix"> </div>
-			  </div>
+			  </div-->
 		</div>
 	</div>
 </div>

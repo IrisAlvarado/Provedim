@@ -53,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						        <span class="icon-bar"></span>
 					        </button>
 					        <div class="navbar-brand logo">
-								<a href="index.html"><img src="logo/logo2.jpeg" alt="" id="logo"></a>
+								<a href="index.php"><img src="logo/logo2.jpeg" alt="" id="logo"></a>
 							</div>
 					    </div>
 					    <!--/.navbar-header-->
@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 					</div>
 					<div class="head-signin">
-						<h5><a href="login.html"><i class="hd-dign"></i>Iniciar Sesión</a></h5>
+						<h5><a href="login.php"><i class="hd-dign"></i>Iniciar Sesión</a></h5>
 					</div>
                      <div class="clearfix"> </div>
 				</div>

@@ -341,3 +341,20 @@ function verificarFiltro(){
 }
 
 /**================================================ =========FIN FUNCION VERIFICAR FILTRO======================================================= */
+
+
+$(document).ready(function(){
+    console.log("Entro");
+	$.ajax({
+		url:"backend/apiProductos.php?accion=obtenerProductos",
+		dataType:'json',
+		success:function(respuesta){
+			console.log(respuesta);
+			for (var i = 0; i<respuesta.length; i++) {
+                if ( respuesta[i].urlImagen!=null && respuesta[i].urlImagen!="" ) {
+                    $("#obtenerProductos").append('<div class="col-md-4 product-block"><div class="col-md-12 home-grid"><div class="home-product-main"><div class="home-product-top"><a href="single.html"><img src="'+respuesta[i].urlImagen+'" alt="" class="img-responsive zoom-img"></a></div><div class="home-product-bottom"><h3><a href="single.html">'+respuesta[i].nombre+'</a></h3><p>'+respuesta[i].descripcion+'</p></div><div class="srch"><span>Lps. '+respuesta[i].precio+'</span></div></div></div><div class="clearfix"> </div></div>');
+                }
+			}
+		}
+	});
+});
