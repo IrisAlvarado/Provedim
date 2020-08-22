@@ -79,7 +79,6 @@
                     
                     <button id="idGuardarRegistro" onclick="validarProducto()" type="button" class="btn btn-success btn-lg btn-block">
 						<span class="icon-floppy-disk"></span>Subir Imagen
-						<span class="icon-floppy-disk"></span>Subir Imágen
 					</button>
                 </div>
             </div>

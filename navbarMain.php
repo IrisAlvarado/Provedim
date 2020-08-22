@@ -59,11 +59,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					        <ul class="nav navbar-nav">
 
 					        	   <li><a href="index.php"><b>Home</b></a></li>
-					        	   <li><a href="index.php#quienes-somos"><b>¿Quiénes Somos?</b></a></li>
-					        	   <li><a href="index.php#catalogo"><b>Catálogo</b></a></li>
+					        	   <li><a href="contact.html"><b>¿Quiénes Somos?</b></a></li>
+					        	   <li><a href="catalogo.php"><b>Catálogo</b></a></li>
 
-					        	   <li><a href="index.php#cotizaciones"><b>Cotizaciones</b></a></li>
-						        	<li><a href="index.php#proveedores"><b>Proveedores</b></a></li>
+					        	   <li><a href="#"><b>Cotizaciones</b></a></li>
+						        	<li><a href="#"><b>Proveedores</b></a></li>
 
 
 					        </ul>
