@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					        <ul class="nav navbar-nav">
 
-					        	   <li><a href="index.html"><b>Home</b></a></li>
+					        	   <li><a href="index.php"><b>Home</b></a></li>
 					        	   <li><a href="#quienes-somos"><b>¿Quiénes Somos?</b></a></li>
 					        	   <li><a href="#catalogo"><b>Catálogo</b></a></li>
 
@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 
-							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
+							<h3 class="centrado"><a href="catalogo.php">Ver Anuncio</a></h3>
 
 
 							<p></p>
@@ -199,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 
-							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
+							<h3 class="centrado"><a href="catalogo.php">Ver Anuncio</a></h3>
 					</div>
 					<div class="srch">
 						<span>L.250</span>
@@ -213,7 +213,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 
-							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
+							<h3 class="centrado"><a href="catalogo.php">Ver Anuncio</a></h3>
 					</div>
 					<div class="srch">
 						<span>L.150</span>
@@ -227,14 +227,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 					<div class="home-product-bottom">
 
-							<h3 class="centrado"><a href="single.html">Ver Anuncio</a></h3>
+							<h3 class="centrado"><a href="catalogo.php">Ver Anuncio</a></h3>
 
 					</div>
 					<div class="srch">
 						<span>L.200</span>
 					</div>
 				</div>
-                <a href="product.html" class="item_add contact2">Ver más</a>
+                <a href="catalogo.php" class="item_add contact2">Ver más</a>
 			</div>
 
 			<div class="clearfix"> 
@@ -268,7 +268,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Para empezar visualice nuestro catálogo de productos</h3>
 				<br> 
 				<ul class="bann-btns">
-				<li><a href="product.html" class="item_add contact2">Ver catálogo</a></li>
+				<li><a href="catalogo.php" class="item_add contact2">Ver catálogo</a></li>
                </ul>
                
 			</div>
@@ -299,7 +299,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			</div>
 			<div class="col-md-3 home-grid">
-			    <a href="product.html"><img src="images/w3.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
+			    <a href="catalogo.php"><img src="images/w3.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 			    <br></br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 a 10 Anuncios</p>
 				       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 $</p>
@@ -309,7 +309,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="col-md-3 home-grid">
 
-				      <a href="product.html"><img src="images/w4.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
+				      <a href="catalogo.php"><img src="images/w4.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 				      <br></br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anuncios Ilimitados</p>
 				       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20 $</p>
@@ -335,24 +335,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="ftr-grids-block">
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="product.html">Mascarillas</a></li>
-						<li><a href="product.html">Guantes</a></li>
-						<li><a href="product.html">Gel de manos</a></li>
+						<li><a href="catalogo.php">Mascarillas</a></li>
+						<li><a href="catalogo.php">Guantes</a></li>
+						<li><a href="catalogo.php">Gel de manos</a></li>
 						<li><a href="product.html"></a></li>
 						<li><a href="product.html"></a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="login.html">Tu cuenta</a></li>
+						<li><a href="login.php">Tu cuenta</a></li>
 						<li><a href="contact.html">Contáctenos</a></li>
-						<li><a href="product.html">Productos</a></li>
+						<li><a href="catalogo.php">Productos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="terms.html">Términos&Condiciones</a></li>
-						<li><a href="shortcodes.html"></a></li>
+						<li><a href=#>Términos&Condiciones</a></li>
+						<li><a href=#></a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid-icon">
