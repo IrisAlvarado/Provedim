@@ -23,6 +23,7 @@
                                     <div class="card-header"><h3 class="text-center font-weight-dark my-4">Iniciar Sesión</h3></div>
                                     <div class="card-body">
                                         <form method="post" action="AgregarProducto/index.html">
+                                        <form method="post" action="principal.php">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputEmailAddress">
                                                     <i class="fas fa-envelope fa-2x" style="color: #000; height: 16px;"></i> Correo Electrónico:
