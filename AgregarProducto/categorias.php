@@ -24,32 +24,29 @@
 	<link rel="stylesheet" href="fonts.css" />
 </head>
 <body>
-	<?php
-      //include 'navbarAdmin.php';
-    ?>
 		<div class="sidebar">
 			<ul>
 				<h2>MENÚ</h2>
 				<li>
-					<a href="index.html"><span class="icon-home"></span>INICIO</a>
+					<a href="#"><span class="icon-home"></span>INICIO</a>
 				</li>
 				<li>
-					<a href=""><span class="icon-file-text"></span>CATÁLOGO</a>
+					<a href="#"><span class="icon-file-text"></span>CATÁLOGO</a>
 				</li>
 				<li>
-					<a href=""><span class="icon-cart"></span>PRODUCTOS</a>
+					<a href="#"><span class="icon-cart"></span>PRODUCTOS</a>
 				</li>
 				<li>
 					<a href="categorias.php"><span class="icon-list"></span>CATEGORÍAS</a>
 				</li>
 				<li>
-					<a href=""><span class="icon-stats-bars"></span>COTIZACIONES</a>
+					<a href="#"><span class="icon-stats-bars"></span>COTIZACIONES</a>
 				</li>
 				<li>
-					<a href=""><span class="icon-question"></span>AYUDA</a>
+					<a href="#"><span class="icon-question"></span>AYUDA</a>
 				</li>
 				<li>
-					<a href=""><span class="icon-cog"></span>CONFIGURACIÓN</a>
+					<a href="#"><span class="icon-cog"></span>CONFIGURACIÓN</a>
 				</li>
 			</ul>
 		</div>
@@ -73,7 +70,6 @@
         <!--Columna agregar o editar -->
           <div class="col-md-4" >
 				 <!--Columna agregar -->
-				 <br><br><br><br><br><br>
 
 				<div class="py-5 jumbotron" id="agregarCat" name="agregarCat">
 					<div class="list-group">

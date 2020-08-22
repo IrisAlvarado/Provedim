@@ -17,25 +17,25 @@
         <ul>
             <h2>MENÚ</h2>
             <li>
-                <a href=""><span class="icon-home"></span>INICIO</a>
+                <a href="#"><span class="icon-home"></span>INICIO</a>
             </li>
             <li>
-                <a href=""><span class="icon-file-text"></span>CATÁLOGO</a>
+                <a href="#"><span class="icon-file-text"></span>CATÁLOGO</a>
             </li>
             <li>
-                <a href=""><span class="icon-cart"></span>PRODUCTOS</a>
+                <a href="#"><span class="icon-cart"></span>PRODUCTOS</a>
             </li>
             <li>
                 <a href="categorias.php"><span class="icon-list"></span>CATEGORÍAS</a>
             </li>
             <li>
-                <a href=""><span class="icon-stats-bars"></span>COTIZACIONES</a>
+                <a href="#"><span class="icon-stats-bars"></span>COTIZACIONES</a>
             </li>
             <li>
-                <a href=""><span class="icon-question"></span>AYUDA</a>
+                <a href="#"><span class="icon-question"></span>AYUDA</a>
             </li>
             <li>
-                <a href=""><span class="icon-cog"></span>CONFIGURACIÓN</a>
+                <a href="#"><span class="icon-cog"></span>CONFIGURACIÓN</a>
             </li>
         </ul>
     </div>
@@ -49,11 +49,6 @@
         <div class="nom-prov">
             <div id="img">
                 <img id="logo" src="img/logoprov.png" alt="" />
-            </div>
-            <div id="datos-prov">
-                <h2>PRODENTAL</h2>
-                <h5>Venta de producto médico y de bioseguridad</h5>
-                <h6>Administrador: Jesús Chinchilla</h6>
             </div>
         </div>
 

@@ -185,33 +185,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="ftr-grids-block">
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="product.html">Accessories</a></li>
-						<li><a href="product.html">Hand bags</a></li>
-						<li><a href="product.html">Clothing</a></li>
-						<li><a href="product.html">Brands</a></li>
-						<li><a href="product.html">Watches</a></li>
+						<li><a href="catalogo.php">Accessories</a></li>
+						<li><a href="catalogo.php">Hand bags</a></li>
+						<li><a href="catalogo.php">Clothing</a></li>
+						<li><a href="catalogo.php">Brands</a></li>
+						<li><a href="catalogo.php">Watches</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="login.html">Tu cuenta</a></li>
+						<li><a href="login.php">Tu cuenta</a></li>
 						<li><a href="contact.html">Contáctanos</a></li>
-						<li><a href="product.html">Store Locator</a></li>
-						<li><a href="pressroom.html">Press Room</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<ul>
-						<li><a href="terms.html">Website Terms</a></li>
-						<li><select class="country">
-										<option value="select your location">Select Country</option>
-										<option value="saab">Australia</option>
-										<option value="fiat">Singapore</option>
-										<option value="audi">London</option>
-									</select>
-
-						</li>
-						<li><a href="shortcodes.html">Short Codes</a></li>
+						<li><a href="catalogo.php">Productos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid-icon">

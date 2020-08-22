@@ -79,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					    <input class="serch" type="text" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}"/>
 					</div>
 					<div class="cart box_1">
-						<a href="checkout.html">
+						<a href=#>
 						<h3>
 							<img src="images/cart.png" alt=""/>
 							<div class="total">
@@ -89,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 					</div>
 					<div class="head-signin">
-						<h5><a href="login.html"><i class="hd-dign"></i>Iniciar Sesión</a></h5>
+						<h5><a href="login.php"><i class="hd-dign"></i>Iniciar Sesión</a></h5>
 					</div>
                      <div class="clearfix"> </div>
 				</div>

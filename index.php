@@ -114,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h2>Bienvenido a Nuestra Plataforma</h2>
 				<h6></h6>
 				<ul class="bann-btns">
-				<li><a href="product.html" class="item_add" id="catalog"><b>Ir a catálogo</b></a></li>
+				<li><a href="catalogo.php" class="item_add" id="catalog"><b>Ir a catálogo</b></a></li>
                </ul>
 			</div>
 			<div class="clearfix"> </div>
