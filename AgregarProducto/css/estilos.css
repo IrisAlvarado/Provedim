@@ -1,18 +1,27 @@
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: scroll;
 	width: auto;
 	height: auto;
+	background: linear-gradient(#3dd5c9, #d0f8f8);
+	background-size: auto;
+	background-attachment: fixed !important;
+	background-repeat: inherit;
 }
+
 .sidebar {
 	position: absolute;
 	width: 250px;
 	height: 100%;
+	max-height: max-content;
 	background: #333333;
+	background-size: auto;
+	background-attachment: scroll;
 	color: #ffffff;
 	outline: 1px solid #2a2a2a;
 	transition: all 500ms linear;
+	margin-top: 19px;
 }
 
 .sidebar h2 {
@@ -54,7 +63,7 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: #bcedda;
+	background: linear-gradient(#3dd5c9, #d0f8f8);
 	padding: 30px;
 	box-sizing: border-box;
 	transition: all 500ms linear;
@@ -70,11 +79,10 @@ body {
 
 .contenido h2 {
 	width: 50%;
-	display: inline-block;
+	text-align: left;
 }
 .contenido h3 {
 	width: 50%;
-	float: right;
 	text-align: right;
 }
 
@@ -113,14 +121,40 @@ body {
 	margin-right: 8px;
 }
 .container {
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
+	background-color: #3dd5c9;
+	padding: 30px 30px 20px 30px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-radius: 10px;
+	border-width: 3px 3px;
+	border-color: #0b5345 #0b5345;
+}
+
+.container:hover {
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	border-right: 4px solid;
+	border-left: 4px solid;
+	border-color: #000 #000;
 }
 
 .btn {
 	align-content: center;
+}
+
+.btn:hover {
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-right: 3px solid;
+	border-left: 3px solid;
+	border-color: #fff #fff;
 }
 
 #label {
@@ -146,11 +180,54 @@ body {
 	margin-right: 8px;
 }
 
-.card {
-	align-content: center;
-	margin: auto 0;
+.nom-prov {
+	margin-top: 40px;
+	margin-left: 160px;
 }
 
-.card-body {
-	background: #f1f1f1 important;
+.navbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.navbar h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding-right: 20px;
+}
+
+.icon-user-tie {
+	margin-left: 8px;
+}
+
+.form-control {
+	height: 45px;
+	background: #dffbeb;
+}
+
+.form-control:hover {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	border-color: #000 #000;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.flex-center {
+	align-self: center !important;
+}
+
+.col-sm-6 section {
+	padding-left: 25px;
+	padding-right: 25px;
 }

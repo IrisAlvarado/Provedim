@@ -18,50 +18,52 @@ function validarProducto() {
 		cantidad === '' ||
 		codigo === ''
 	) {
-		alert('Llene los campos vacios');
+		// alert('Llene los campos vacios');
+		Swal.fire({
+			icon: 'error',
+			title: 'Los campos estan vacios',
+			text: 'Inténtalo de nuevo',
+		});
 		return false;
 	} else if (nombre.lenght > 45) {
-		alert('El nombre del producto es muy largo');
+		Swal.fire({
+			icon: 'error',
+			title: 'El nombre es muy largo',
+			text: 'Inténtalo de nuevo',
+		});
 		return false;
 	} else if (marca.lenght > 15) {
-		alert('El nombre de la marca es muy largo');
+		Swal.fire({
+			icon: 'error',
+			title: 'El nombre de la marca es muy largo',
+			text: 'Inténtalo de nuevo',
+		});
 		return false;
 	} else if (descripcion.lenght > 45) {
-		alert('La descripción del producto es muy grande');
+		Swal.fire({
+			icon: 'error',
+			title: 'La descripción del producto es muy larga',
+			text: 'Inténtalo de nuevo',
+		});
 		return false;
 	} else if (isNaN(precio)) {
-		alert('El precio ingresado no es un número');
+		Swal.fire({
+			icon: 'error',
+			title: 'El precio ingresado no es un número',
+			text: 'Inténtalo de nuevo',
+		});;
 		return false;
 	} else if (isNaN(cantidad)) {
-		alert('La cantidad ingresada no es un número');
+		Swal.fire({
+			icon: 'error',
+			title: 'La cantidad ingresada no es un número',
+			text: 'Inténtalo de nuevo',
+		});
 		return false;
 	} else if (isNaN(codigo)) {
 		alert('El cógido ingresado');
 		return false;
 	} else {
-		$("#modalSubirImagen").modal('show');
 		return true;
 	}
 }
-
-$("#idGuardarRegistro").click(function(){
-	//console.log("Entro");
-
-	var parametros= 
-		"nombre="+$("#txt-producto").val()+"&"+
-		"marca="+$("#txt-marca").val()+"&"+
-		"descripcion="+$("#txt-descripcion").val()+"&"+
-		"categoria="+$("#s-categoria").val()+"&"+
-		"precio="+$("#txt-precio").val()+"&"+
-		"cantidad="+$("#txt-cantidad").val()+"&"+
-		"codigo="+$("#txt-codigo").val();
-		
-	console.log(parametros);		
-	
-	$.ajax({
-		url:"../backend/apiProductos.php?accion=guardarRegistro",
-		method:"POST",
-		data:parametros,
-		dataType:"json"
-	});	
-});
