@@ -20,7 +20,7 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed">
+    <body class="sb-nav-fixed" background="img/fondu2.jpg">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php">PROVEDIM</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
             ><!-- Navbar Search-->
@@ -65,9 +65,7 @@
                                 Catálogo</a
                             >
                             <a class="nav-link" href="AgregarProducto/index.html">
-                            <a class="nav-link" href="AgregarProducto/agregarProducto.php"
-
-                                ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Agregar producto
                             </a>
                         </div>
@@ -87,10 +85,42 @@
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active"></li>
                         </ol>
+                        <h2>Somos una plataforma que le ayuda a promocionar sus productos médicos y de bioseguridad.</h2>
+                        <h5>Nuestras Opciones</h5>
                         <div class="row">
+                          <div class="card border-success mb-3" style="max-width: 18rem;">
+                            <h5 class="card-title"></h5>
+                            <div class="card-header">Catálogo</div>
+                            <div class="card-body text-success">
                             
-                            
+                            <p class="card-text">Le permite visualizar el catálogo de productos que se muestran al usuario, donde se puede filtrar para obtener mejores resutados en la búsqueda de productos que están publicados dentro de la plataforma.</p>
+                            <a href="../catalogo.php">Ir a catálogo</a>
                         </div>
+                    </div>
+                    <br>........</br>
+
+                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Categorías</div>
+                        <div class="card-body text-warning">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Si ud al publicar un producto necesita una categoría y esta no se encuentra en las opciones, en esta página ud puede crear esa nueva categoría, de igual manera puede visualzar las categorías creadas por ud.</p>
+                            <a href="categorias.php">Ir a catálogo</a>
+                        </div>
+                    </div>
+                    <br>........ </br>
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Agregar Producto</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">En esta sección ud podrá agregar nuevos productos, a través de un formulario donde colocará datos especifícos del producto que desea publicar.</p>
+                            <br></br>
+                            <a href="index.html">Ir a catálogo</a>
+                        </div>
+                    </div>
+
+
+                            
+                    </div>  
                         
                         
                     </div>
