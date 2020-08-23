@@ -69,7 +69,10 @@
                         <div class="row justify-content-center my-5">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-dark my-4">Iniciar Sesión</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-dark my-4">Iniciar Sesión</h3>
+                                    <div class="form-group" id="alertaMsj" style="color:red; text-align:center;font-weight:700;"><?php echo isset($msg) ? $msg: ''; ?></div>
+
+                                </div>
                                     <div class="card-body">
 
                                         <form method="post" action="login.php">
