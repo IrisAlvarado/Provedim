@@ -64,7 +64,9 @@
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Catálogo</a
                             >
-                            <a class="nav-link" href="AgregarProducto/index.html"
+                            <a class="nav-link" href="AgregarProducto/index.html">
+                            <a class="nav-link" href="AgregarProducto/agregarProducto.php"
+
                                 ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Agregar producto
                             </a>
