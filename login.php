@@ -1,11 +1,11 @@
-
 <?php
+    
     session_start();
     $msg = '';
-    if(!empty($_SESSION['active'])){
+    if(!empty($_SESSION['active'])){  //Si la sesión esta activada se direcciona a la pagina principal
         header('location: principal.php');
 
-    }else{
+    }else{ //sino lo direcciona a la validación
     
         if (!empty($_POST)) {
 
@@ -14,38 +14,36 @@
             } else {
                 require_once "conexion.php";
                 $correo = $_POST['correo'];
-                $contrasenia = $_POST['contrasenia'];                
+                $contrasenia = $_POST['contrasenia'];
 
-                $query = mysqli_query($mysqli, "SELECT * FROM persona WHERE correo='$correo' AND contrasenia='$contrasenia'");
+
+                $query = mysqli_query($mysqli, "SELECT * FROM persona WHERE correo='$correo'");
                 $result = mysqli_num_rows($query);
 
                 if($result>0){
                     $data = mysqli_fetch_array($query);
-                    $_SESSION['active'] = true;
-                    $_SESSION['idUser'] =$data['idPersona'];
-                    $_SESSION['email'] = $data['correo'];
-                    $_SESSION['nombre'] = $data['primerNombre'];
-                    $_SESSION['user'] = $data['segundoNombre'];
-                    $_SESSION['rol'] = $data['idTipoUsuario'];
-
-                    header('location: principal.php');
-
-
+                    $password_db = $data['contrasenia'];
+                    if($password_db==$contrasenia){
+                        $_SESSION['active'] = true;
+                        $_SESSION['idUser'] =$data['idPersona'];
+                        $_SESSION['nombre'] = $data['primerNombre'];
+                        $_SESSION['email'] = $data['correo'];
+                        $_SESSION['nombre'] = $data['primerNombre'];
+                        $_SESSION['user'] = $data['segundoNombre'];
+                        $_SESSION['rol'] = $data['idTipoUsuario'];
+    
+                        header('location: principal.php');
+                    }else{
+                        $msg = "Contraseña incorrecta";
+                    }
+                    
                 }else{
-                    $msg = "El usuario o la clave son incorrectos";
+                    $msg = "El usuario no existe";
                     session_destroy();
                 }
-
-
-
             }
-
-
         }
-
     }
-    
-
 ?>
 
 <!DOCTYPE html>
