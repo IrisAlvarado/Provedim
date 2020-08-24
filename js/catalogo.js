@@ -36,14 +36,14 @@ function generarAnuncios() {
             for (let i = 0; i < response.length; i++) {
 
                 $("#generarAnuncios").append(
-                    `<div class="col-md-3 home-grid">
+                    `<div class="col-md-3 home-grid" style="height: 475px;">
                             <div class="home-product-main">
                                <div class="home-product-top">
                                   <a href="single.html"><img src="${response[i].urlFoto}" alt="" class="img-responsive zoom-img"></a>
                                </div>
                                 <div class="home-product-bottom">
                                         <h3><a href="single.html">${response[i].nombreProducto}</a></h3>
-                                        <p>Ver Anuncio</p>
+                                        <p>${response[i].descripcion}</p>
                                 </div>
                                 <div class="srch">
                                     <span>${response[i].precio}</span>
@@ -222,14 +222,14 @@ function cargarTablaTbl() {
     for (let i = 0; i < response.length; i++) {
 
                 $("#generarAnuncios").append(
-                    `<div class="col-md-3 home-grid">
-                            <div class="home-product-main">
+                    `<div class="col-md-3 home-grid" style="height: 475px;">
+                            <div class="home-product-main" >
                                <div class="home-product-top">
                                   <a href="single.html"><img src="${response[i].urlFoto}" alt="" class="img-responsive zoom-img"></a>
                                </div>
                                 <div class="home-product-bottom">
                                         <h3><a href="single.html">${response[i].nombreProducto}</a></h3>
-                                        <p>Ver Anuncio</p>
+                                        <p>${response[i].descripcion}</p>
                                 </div>
                                 <div class="srch">
                                     <span>${response[i].precio}</span>
@@ -352,7 +352,7 @@ $(document).ready(function(){
 			console.log(respuesta);
 			for (var i = 0; i<respuesta.length; i++) {
                 if ( respuesta[i].urlImagen!=null && respuesta[i].urlImagen!="" ) {
-                    $("#obtenerProductos").append('<div class="col-md-4 product-block"><div class="col-md-12 home-grid"><div class="home-product-main"><div class="home-product-top"><a href="single.html"><img src="'+respuesta[i].urlImagen+'" alt="" class="img-responsive zoom-img"></a></div><div class="home-product-bottom"><h3><a href="single.html">'+respuesta[i].nombre+'</a></h3><p>'+respuesta[i].descripcion+'</p></div><div class="srch"><span>Lps. '+respuesta[i].precio+'</span></div></div></div><div class="clearfix"> </div></div>');
+                    $("#obtenerProductos").append('<div class="col-md-3 home-grid" style="height: 445px;"><div class="home-product-main"><div class="home-product-top"><a href="single.html"><img src="'+respuesta[i].urlImagen+'" alt="" class="img-responsive zoom-img"></a></div><div class="home-product-bottom"><h3><a href="single.html">'+respuesta[i].nombre+'</a></h3><p>'+respuesta[i].descripcion+'</p></div><div class="srch"><span>Lps. '+respuesta[i].precio+'</span></div></div></div>');
                 }
 			}
 		}
