@@ -31,7 +31,7 @@
 		case 'guardarRegistro':
 			$sql = sprintf("SELECT `AUTO_INCREMENT` FROM  INFORMATION_SCHEMA.TABLES	WHERE TABLE_SCHEMA = 'mydb'	AND   TABLE_NAME   = 'productos'");
 			$ultimo = $conexion->ejecutarConsulta($sql);
-			$ultimos = $ultimo->fetch_array()[0]+1;			
+			$ultimos = $ultimo->fetch_array()[0]+1;
 			
 			$ruta_carpeta = "images/producto/". ($ultimos-1) ."/";
 			if (!file_exists($ruta_carpeta)) {
