@@ -81,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					    <input class="serch" type="text" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}"/>
 					</div>
 					<div class="cart box_1">
-						<a href="checkout.html">
+						<a href="#">
 						<h3>
 							<img src="images/cart.png" alt=""/>
 							<div class="total">
@@ -155,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Si estas buscando productos a precios accesibles, te invitamos a que entres a nuestra sección "catálogo". Así podrás echar un vistaso a la variedad de productos que te muestra PROVEDIM sobre proveedores 100% fiables.</h5>
 				</div>
 				<ul class="bann-btns">
-				<li><a href="contact.html" class="item_add contact2">Contáctanos</a></li>
+				<li><a href="#" class="item_add contact2">Contáctanos</a></li>
                </ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -173,12 +173,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h1>Catálogo</h1>
 			<br>
 				<h3>Productos Destacados</h3>
-				
+
 				   	</br>
 			<div class="col-md-3 home-grid">
 				<div class="home-product-main">
 				   <div class="home-product-top">
-				      <a href="product.html"><img src="images/h1.jpg" alt="" class="img-responsive zoom-img"></a>
+				      <a href="#"><img src="images/h1.jpg" alt="" class="img-responsive zoom-img"></a>
 				   </div>
 					<div class="home-product-bottom">
 
@@ -195,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 home-grid">
 				<div class="home-product-main">
 				   <div class="home-product-top">
-				      <a href="product.html"><img src="images/h2.jpg" alt="" class="img-responsive zoom-img"></a>
+				      <a href="#"><img src="images/h2.jpg" alt="" class="img-responsive zoom-img"></a>
 				   </div>
 					<div class="home-product-bottom">
 
@@ -209,7 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 home-grid">
 				<div class="home-product-main">
 				   <div class="home-product-top">
-				      <a href="product.html"><img src="images/h3.jpg" alt="" class="img-responsive zoom-img"></a>
+				      <a href="#"><img src="images/h3.jpg" alt="" class="img-responsive zoom-img"></a>
 				   </div>
 					<div class="home-product-bottom">
 
@@ -223,7 +223,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 home-grid">
 				<div class="home-product-main">
 				   <div class="home-product-top">
-				      <a href="product.html"><img src="images/h4.jpg" alt="" class="img-responsive zoom-img"></a>
+				      <a href="#"><img src="images/h4.jpg" alt="" class="img-responsive zoom-img"></a>
 				   </div>
 					<div class="home-product-bottom">
 
@@ -237,10 +237,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="catalogo.php" class="item_add contact2">Ver más</a>
 			</div>
 
-			<div class="clearfix"> 
+			<div class="clearfix">
 			</div>
-			
-			
+
+
 		</div>
 
 	</div>
@@ -266,11 +266,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>En Provedim le damos la opción a que pueda cotizar cantidades y precios de los productos que encuentra en nuestro catálogo de acuerdo a los anuncios y proveedores que se seleccionan.</h3> </br>
 				<br> </br>
 				<h3>Para empezar visualice nuestro catálogo de productos</h3>
-				<br> 
+				<br>
 				<ul class="bann-btns">
 				<li><a href="catalogo.php" class="item_add contact2">Ver catálogo</a></li>
                </ul>
-               
+
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -306,16 +306,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   </div>
 
 			</div>
-			
+
 			<div class="col-md-3 home-grid">
 
 				      <a href="catalogo.php"><img src="images/w4.png" alt="blc-layer2-center" class="img-responsive zoom-img"></a>
 				      <br></br>
 				      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anuncios Ilimitados</p>
 				       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20 $</p>
-				       
+
 				   </div>
-					<a href="reg.php" class="header-right">Crear cuenta</a>
+					<a href="#" class="header-right">Crear cuenta</a>
 				</div>
 			</div>
 
@@ -345,7 +345,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-grid">
 					<ul>
 						<li><a href="login.php">Tu cuenta</a></li>
-						<li><a href="contact.html">Contáctenos</a></li>
+						<li><a href="#">Contáctenos</a></li>
 						<li><a href="catalogo.php">Productos</a></li>
 					</ul>
 				</div>
@@ -371,7 +371,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    <div class="clearfix"> </div>
 		  </div>
 		  <div class="copy-rights">
-		     <p>© 2020  UNAH | Industria del Software | <a href="http://w3layouts.com/" target="_blank">Provedim</a> </p>
+		     <p>© 2020  UNAH | Industria del Software | <a href="#" target="_blank">Provedim</a> </p>
 		   </div>
 		</div>
 	</div>

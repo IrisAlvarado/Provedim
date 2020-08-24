@@ -155,8 +155,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  		<button type="button" class="btn btn-link" style="margin-left:49%;"><a href="catalogo.php" id="show">Mostrar todos los Anuncios</a></button>
 			  	</div>
 			  </div>
+			  <div class="col-md-12" style="height: 50px;"><hr style="  border-top: 2px solid black!important;"></div>
+			  <div class="col-md-12" style="margin-top: 15px;"><h2>Mas Recientes</h2></div>
+				<div class="col-md-12 product-block">
+			  		<div  id="obtenerProductos"></div>
+			  		<div class="clearfix"> </div>
+			  	</div>
 
-			  <div id="obtenerProductos"></div>
+			  	<div class="col-md-12" style="height: 80px;"><hr style="  border-top: 2px solid black!important;"></div>
+
+			  	<div class="col-md-12"><h2>Otros productos</h2></div>
+			  <div class="col-md-12 product-block">
+			  		<div id="generarAnuncios"></div>
+			      	<div class="clearfix"> </div>
+			  </div>
 			  <!--div class="col-md-9 product-block">
 			      <div class="col-md-4 home-grid">
 					<div class="home-product-main">
@@ -165,7 +177,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					   </div>
 						<div class="home-product-bottom">
 								<h3><a href="single.html">Smart Shoppingsasa</a></h3>
-								<p>Explore Now</p>						
+								<p>Explore Now</p>
 						</div>
 						<div class="srch">
 							<span>$200</span>

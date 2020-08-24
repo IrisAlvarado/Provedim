@@ -79,22 +79,24 @@ body{
 	margin-top: 1em;
 	margin-bottom: 15px;
 	width: 24%;
-	background-color: #67E6FF  ;/*#83FFEE*/
-	color: #016DAA!important;
+	/*background-color: #086110 /*#67E6FF  ;/*#83FFEE*/
+	color: black;/*#016DAA!important;*/
 }
 #btn-filtros:hover{
-	background-color: #66D2E7 ;/*#83FFEE*/
+	background-color: #B3CFB5  ;/*#66D2E7 ;/*#83FFEE*/
+	color: white!important;
 }
 
 
 .contenedorFilter{
-	background-color: #B0FFF4;
+	background-color: #C4FFDB!important;/*#4F835A!important;/*#B0FFF4;*/
 	margin-bottom: -40px;
-	border-color: #02A5CD!important;
+	border-color: #4F835A!important;/*#02A5CD!important;*/
+
 }
 
 #subtitulo{
 	font-size: 25px;
 	margin-top: 5px!important;
-	color: #02A5CD  ;
+	color: black;/*#02A5CD  ;*/
 }

@@ -1,8 +1,8 @@
 <?php
     session_start();
-    
+
     if(empty($_SESSION['active'])){
-        header('location: ingresar.php');
+        header('location: login.php');
 
     }
 ?>
@@ -53,13 +53,13 @@
                             <a class="nav-link" href="principal.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Inicio</a>
-                            
+
                             <a class="nav-link" href="AgregarProducto/categorias.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 categorías
                             </a>
-                            
-                            
+
+
                             <a class="nav-link" href="catalogo.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Catálogo</a
@@ -88,41 +88,42 @@
                         <h2>Somos una plataforma que le ayuda a promocionar sus productos médicos y de bioseguridad.</h2>
                         <h5>Nuestras Opciones</h5>
                         <div class="row">
-                          <div class="card border-success mb-3" style="max-width: 18rem;">
+                          <div class="card border-success mb-3" style="max-width: 18rem; margin-right: 10%; margin-left: 10%;">
                             <h5 class="card-title"></h5>
                             <div class="card-header">Catálogo</div>
                             <div class="card-body text-success">
-                            
+
                             <p class="card-text">Le permite visualizar el catálogo de productos que se muestran al usuario, donde se puede filtrar para obtener mejores resutados en la búsqueda de productos que están publicados dentro de la plataforma.</p>
-                            <a href="../catalogo.php">Ir a catálogo</a>
+                            <br>
+                            <a href="catalogo.php">Ir a Catálogo</a>
                         </div>
                     </div>
-                    <br>........</br>
+                    <br></br>
 
-                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; margin-right: 10%;">
                         <div class="card-header">Categorías</div>
                         <div class="card-body text-warning">
                             <h5 class="card-title"></h5>
                             <p class="card-text">Si ud al publicar un producto necesita una categoría y esta no se encuentra en las opciones, en esta página ud puede crear esa nueva categoría, de igual manera puede visualzar las categorías creadas por ud.</p>
-                            <a href="categorias.php">Ir a catálogo</a>
+                            <a href="AgregarProducto/categorias.php">Ir a Categorias</a>
                         </div>
                     </div>
-                    <br>........ </br>
+                    <br></br>
                     <div class="card border-info mb-3" style="max-width: 18rem;">
                         <div class="card-header">Agregar Producto</div>
                         <div class="card-body text-info">
                             <h5 class="card-title"></h5>
                             <p class="card-text">En esta sección ud podrá agregar nuevos productos, a través de un formulario donde colocará datos especifícos del producto que desea publicar.</p>
                             <br></br>
-                            <a href="index.html">Ir a catálogo</a>
+                            <a href="AgregarProducto/index.html">Agregar Producto</a>
                         </div>
                     </div>
 
 
-                            
-                    </div>  
-                        
-                        
+
+                    </div>
+
+
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

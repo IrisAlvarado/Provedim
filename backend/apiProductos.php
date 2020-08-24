@@ -28,47 +28,40 @@
 			echo json_encode($resultadoProductos);
         break;
         
-        case 'guardarRegistro':
-			$productos = new Productos(
-				$_POST["nombre"],
-				$_POST["marca"],
-				$_POST["descripcion"],
-                $_POST["categoria"],
-                $_POST["precio"],
-                $_POST["cantidad"],
-				$_POST["codigo"],
-				null
-			);
-			$productos->guardarRegistroBase($conexion);
-		break;
-
-		case 'guardarImagen':
-			$sql = sprintf("SELECT id FROM productos ORDER BY id DESC LIMIT 1");
+		case 'guardarRegistro':
+			$sql = sprintf("SELECT `AUTO_INCREMENT` FROM  INFORMATION_SCHEMA.TABLES	WHERE TABLE_SCHEMA = 'mydb'	AND   TABLE_NAME   = 'productos'");
 			$ultimo = $conexion->ejecutarConsulta($sql);
-			$ultimos = $ultimo->fetch_array()[0];
+			$ultimos = $ultimo->fetch_array()[0]+1;
+			
+			$ruta_carpeta = "images/producto/". ($ultimos-1) ."/";
+			if (!file_exists($ruta_carpeta)) {
+				mkdir('../'.$ruta_carpeta, 0777, true);
+			}
 
-			echo $ultimos;
-			$ruta_carpeta = "images/producto/". $ultimos ."/";
-			mkdir('../'.$ruta_carpeta, 0777, true);
-
-			$nombre_archivo = "imagen_".date("dHis").".".pathinfo( $_FILES["imagen"]["name"],PATHINFO_EXTENSION );
+			$nombre_archivo = "imagen_".date("dHis").".".pathinfo( $_FILES["images"]["name"],PATHINFO_EXTENSION );
 			$ruta_guardar_archivo = $ruta_carpeta .  $nombre_archivo;
+			
+			if ( move_uploaded_file(  $_FILES["images"]["tmp_name"], '../'.$ruta_guardar_archivo ) ) {
+					
+				$productos = new Productos(
+					$_POST["txt-producto"],
+					$_POST["txt-marca"],
+					$_POST["txt-descripcion"],
+					$_POST["s-categoria"],
+					$_POST["txt-precio"],
+					$_POST["txt-cantidad"],
+					$_POST["txt-codigo"],
+					$ruta_guardar_archivo
+				);
+				$productos->guardarRegistroBase($conexion);
 
-			echo $ruta_guardar_archivo;
-
-			$sql = sprintf("UPDATE productos SET urlImagen='".$ruta_guardar_archivo."' WHERE Id ='". $ultimos."'");
-			$resultado = $conexion->ejecutarConsulta($sql);
-
-			if ( move_uploaded_file(  $_FILES["imagen"]["tmp_name"], '../'.$ruta_guardar_archivo ) ) {
-				header("Status: 301 Moved Permanently");
+				//header("Status: 301 Moved Permanently");
 				header("Location: http://localhost/Provedim/catalogo.php");
-				exit;		
-				echo "Imagen Cargada";
 			}else{
 				$sql = sprintf("DELETE FROM productos WHERE id='".$ultimos."'");
 				$resultado = $conexion->ejecutarConsulta($sql);
 				echo "No se puede Cargar";
-			}
+			}			
 		break;
 		
 		default:
