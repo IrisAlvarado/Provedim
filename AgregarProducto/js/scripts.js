@@ -54,6 +54,7 @@ $(document).ready(function () {
 				timer: 1000,
 			});
 		}
+		document.getElementById('bt-guardar').disabled = false;
 	});
 
 	// -> Cachamos el evento change
