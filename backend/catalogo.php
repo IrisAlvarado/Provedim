@@ -4,7 +4,7 @@ $mysqli = new mysqli( 'localhost:3308', 'root', '', 'mydb' );
 
 switch ($_POST["accion"]) {
 
-	    case "getPublicaciones":
+        case "getPublicaciones":
 
         $nombreProducto;
         $tipoProducto;
@@ -22,7 +22,7 @@ switch ($_POST["accion"]) {
 
 
         $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -76,7 +76,7 @@ switch ($_POST["accion"]) {
         $index++;
     }
 
-    	echo json_encode($respuesta);
+        echo json_encode($respuesta);
 
         break;
 
@@ -121,7 +121,7 @@ switch ($_POST["accion"]) {
             $nombre;
             $idDepartamentoSelected;
 
-		 if (isset($_POST["idDepartamentoSelected"])) {
+         if (isset($_POST["idDepartamentoSelected"])) {
             $idDepartamentoSelected = $_POST["idDepartamentoSelected"];
             //$estado1 = 1;
         }
@@ -194,7 +194,7 @@ switch ($_POST["accion"]) {
         $palabraClave = $_POST["palabraClave"];
         $palabra="%$palabraClave%";
         $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -204,7 +204,7 @@ switch ($_POST["accion"]) {
             inner join moneda mo on an.idMoneda=mo.idMoneda
             inner join tipousuario tu on tu.idTipoUsuario = per.idTipoUsuario
             inner join fotosanuncio fo on  fo.idAnuncios = an.idAnuncios
-            WHERE pro.nombre LIKE ?
+            WHERE an.titulo LIKE ?
             ORDER BY an.fechaPublicacion DESC');
         $stmt->bind_param('s', $palabra);
         $stmt -> execute();
@@ -258,11 +258,11 @@ switch ($_POST["accion"]) {
 //***************************************************BUSQUEDA POR RANGO DE PRECIO***************************************//
         case "busquedaPorPrecio":
         //if (is_float($_POST["desde"]) && is_float($_POST["hasta"]) ) {
-        	# code...
+            # code...
         $desde = $_POST["desde"];
         $hasta = $_POST["hasta"];
         $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -321,9 +321,9 @@ switch ($_POST["accion"]) {
 
         echo json_encode($respuesta);
         //break;
-	/*}else{
-		echo json_encode("false");
-	}*/
+    /*}else{
+        echo json_encode("false");
+    }*/
         break;
 
 //***************************************************CONSULTAS DE FILTRADO DE LA TABLA******************************//
@@ -347,7 +347,7 @@ switch ($_POST["accion"]) {
 
         if ($estado1 == 1 && $estado2 == 0 && $estado3 == 0 ) {
              $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -361,7 +361,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('i', $idCategoria);
         } else if ($estado1 == 1 && $estado2 == 1 && $estado3 == 0 ) {
             $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -377,7 +377,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('ii', $idCategoria, $idDepto);
         } else if ($estado1 == 1 && $estado2 == 1 && $estado3 == 1 ) {
                   $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -393,7 +393,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('iii', $idCategoria, $idDepto, $idMun);
         }  else if ($estado1 == 1 && $estado2 == 0 && $estado3 == 1 ) {
                            $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -409,7 +409,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('ii',  $idCategoria, $idMun);
         } else if ($estado1 == 0 && $estado2 == 1 && $estado3 == 1 ) {
                             $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -425,7 +425,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('ii', $idDepto,$idMun);
         } else if ($estado1 ==0 && $estado2 == 1 && $estado3 == 0) {
                             $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -441,7 +441,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('i', $idDepto);
         } else if ($estado1 == 0 && $estado2 == 0 && $estado3 == 1 ) {
                             $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -457,7 +457,7 @@ switch ($_POST["accion"]) {
             $stmt->bind_param('i',$idMun);
         }  else if ($estado1 == 0 && $estado2 == 0 && $estado3 == 0 ) {
                          $stmt = $mysqli -> prepare(
-            'select  pro.nombre,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
+            'select  an.titulo,pro.tipoProducto ,ca.descripcion categoria,an.descripcion,per.primerNombre,
             per.primerApellido ,an.precio,mo.descripcion ,an.fecha fechaPublicacion,
             DATE_ADD(an.fecha , INTERVAL tu.tiempoPublicacion DAY) fechaVencimiento, an.estado, an.idAnuncios, fo.urlFoto
             from anuncios an
@@ -514,5 +514,5 @@ switch ($_POST["accion"]) {
 
 
     }
-	$mysqli->close();
+    $mysqli->close();
 ?>
