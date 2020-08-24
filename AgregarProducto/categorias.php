@@ -1,7 +1,11 @@
 <?php
-
 //include '../backend/seguridad_admin.php';
+    session_start();
 
+    if(empty($_SESSION['active'])){
+        header('location: ../login.php');
+
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,44 +28,64 @@
 	<link rel="stylesheet" href="fonts.css" />
 </head>
 <body>
+	<?php
+      //include 'navbarAdmin.php';
+    ?>
 		<div class="sidebar">
 			<ul>
 				<h2>MENÚ</h2>
 				<li>
-					<a href="#"><span class="icon-home"></span>INICIO</a>
+					<a href="../principal.php"><span class="icon-home"></span>Inicio</a>
 				</li>
 				<li>
-					<a href="#"><span class="icon-file-text"></span>CATÁLOGO</a>
+					<a href="../catalogo.php"><span class="icon-file-text"></span>Catálogo</a>
+				</li>
+				<!--li>
+					<a href=""><span class="icon-cart"></span>PRODUCTOS</a>
+				</li-->
+				<li>
+					<a href="categorias.php"><span class="icon-list"></span>Categorías</a>
 				</li>
 				<li>
-					<a href="#"><span class="icon-cart"></span>PRODUCTOS</a>
+					<a href="index.html"><span class="icon-stats-bars"></span>Agregar Producto</a>
+				</li>
+				<!--li>
+					<a href=""><span class="icon-question"></span>AYUDA</a>
 				</li>
 				<li>
-					<a href="categorias.php"><span class="icon-list"></span>CATEGORÍAS</a>
-				</li>
-				<li>
-					<a href="#"><span class="icon-stats-bars"></span>COTIZACIONES</a>
-				</li>
-				<li>
-					<a href="#"><span class="icon-question"></span>AYUDA</a>
-				</li>
-				<li>
-					<a href="#"><span class="icon-cog"></span>CONFIGURACIÓN</a>
-				</li>
+					<a href=""><span class="icon-cog"></span>CONFIGURACIÓN</a>
+				</li-->
 			</ul>
 		</div>
 
 		<div id="contenido" class="contenido">
-			<h2>
-				<a href="#"><span class="icon-menu"></span></a> PROVEDIM
-			</h2>
-			<h3>
-				Proveedor<a href="#"><span class="icon-user-tie"></span></a>
-			</h3>
-			<div class="nom-prov">
-				<div id="img">
-					<img id="logo" src="img/logoprov.png" alt="" />
-				</div></div>
+			<nav class="navbar fixed-top navbar-dark bg-dark">
+				<h2 id="h2Cat">
+					<a href="#"><span class="icon-menu"></span></a> PROVEDIM
+				</h2>
+			</nav>
+			<!--div class="row">
+				<div class="col-md-8">
+					<h2>
+						<a href="#"><span class="icon-menu"></span></a> PROVEDIM
+					</h2>
+				</div>
+				<div class="col-md-2">
+					<div class="nom-prov">
+						<div id="">
+							<img id="logo" src="img/logoprov.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<h3>
+						Proveedor<a href="#"><span class="icon-user-tie"></span></a>
+					</h3>
+				</div>
+			</div-->
+
+
+
 	<div></div>
 	<!--Prueba-->
 	<section id="main">
@@ -70,6 +94,7 @@
         <!--Columna agregar o editar -->
           <div class="col-md-4" >
 				 <!--Columna agregar -->
+				 <br><br><br><br><br><br>
 
 				<div class="py-5 jumbotron" id="agregarCat" name="agregarCat">
 					<div class="list-group">
@@ -159,7 +184,7 @@
       </div>
       </div>
     </section>
-	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<!--script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js.descarga"></script>
 
@@ -169,10 +194,25 @@
     <script type="text/javascript" src="../js/controladorCategoria.js"></script>
 
     <script type="text/javascript" src="../js/fotoAdmin.js"></script>
-    		<!--Script para la integración de JavaScrpt-->
+    		<!-Script para la integración de JavaScrpt->
 
 
     <script src="abrir_menu.js"></script>
-    <script src="validarProducto.js"></script>
+    <script src="validarProducto.js"></script-->
+    	    <!--Script para la integración de JavaScrpt-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../js/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/all.js"></script>
+    <script type="text/javascript" src="../js/controladorCategoria.js"></script>
+    <script src="../js/bootstrap.bundle.min.js.descarga"></script>
+    <script src="js/abrir_menu.js"></script>
+    <script src="js/validarProducto.js"></script>
+    <!--script src="js/modal.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/scripts.js"></script-->
 </body>
 </html>
