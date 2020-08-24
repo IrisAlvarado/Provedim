@@ -2,7 +2,7 @@
     session_start();
     
     if(empty($_SESSION['active'])){
-        header('location: ingresar.php');
+        header('location: login.php');
 
     }
 ?>
